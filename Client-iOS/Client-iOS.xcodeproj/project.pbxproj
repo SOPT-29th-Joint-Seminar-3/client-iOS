@@ -25,6 +25,7 @@
 		BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */; };
 		BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */; };
 		BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */; };
+		BDF821992740178C00394812 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF821982740178C00394812 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewSample.swift; sourceTree = "<group>"; };
 		BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMusicVC.storyboard; sourceTree = "<group>"; };
 		BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistDetailVC.storyboard; sourceTree = "<group>"; };
+		BDF821982740178C00394812 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C897FAD892262CD4FC9DB981 /* Pods-Client-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.release.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,6 @@
 				5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */,
 				C897FAD892262CD4FC9DB981 /* Pods-Client-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,7 @@
 				BD041994273EDAE800347610 /* Info.plist */,
 				BD04198C273EDAE700347610 /* Main.storyboard */,
 				BD041991273EDAE800347610 /* LaunchScreen.storyboard */,
+				BDF821982740178C00394812 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -268,6 +270,7 @@
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
+				BDF821992740178C00394812 /* Colors.xcassets in Resources */,
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
 			);
