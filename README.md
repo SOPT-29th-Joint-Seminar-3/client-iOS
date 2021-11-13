@@ -1,6 +1,8 @@
 # client-iOS
 `아자아자!`
 
+testing device: iPhone 13 mini
+
 <br />
 
 ![Banner](https://user-images.githubusercontent.com/61109660/141601921-14561af1-56e5-4af7-9d3e-9dd2266602b1.png)
