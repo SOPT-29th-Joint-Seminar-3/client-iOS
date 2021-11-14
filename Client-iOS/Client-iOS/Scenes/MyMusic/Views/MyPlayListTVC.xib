@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="179" id="3Hj-Ml-LzU" customClass="MyPlayListTVC" customModule="Client_iOS" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyPlayListTVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="179" id="3Hj-Ml-LzU" customClass="MyPlayListTVC" customModule="Client_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="345" height="68"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Hj-Ml-LzU" id="Ey1-ZC-1Rq">
@@ -70,6 +70,11 @@
                     <constraint firstItem="y3u-jR-NCI" firstAttribute="trailing" secondItem="m7n-FG-apS" secondAttribute="trailing" id="v1T-WG-KH5"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="albumCountLabel" destination="y3u-jR-NCI" id="WNC-je-35d"/>
+                <outlet property="albumImageView" destination="WEU-gB-o4U" id="viz-kV-SOu"/>
+                <outlet property="albumTitleLabel" destination="m7n-FG-apS" id="Lt7-r8-FqN"/>
+            </connections>
             <point key="canvasLocation" x="145.6521739130435" y="-158.03571428571428"/>
         </tableViewCell>
     </objects>

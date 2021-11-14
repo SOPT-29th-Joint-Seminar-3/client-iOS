@@ -8,5 +8,6 @@
 import UIKit
 
 class MyPlayListTVC: UITableViewCell {
+    static let ID = "MyPlayListTVC"
     
 }
