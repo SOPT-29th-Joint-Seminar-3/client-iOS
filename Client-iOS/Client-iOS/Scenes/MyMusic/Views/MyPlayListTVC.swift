@@ -10,4 +10,11 @@ import UIKit
 class MyPlayListTVC: UITableViewCell {
     static let ID = "MyPlayListTVC"
     
+    @IBOutlet weak var albumImageView: UIImageView! {
+        didSet {
+            albumImageView.layer.cornerRadius = albumImageView.frame.height * 0.132352
+        }
+    }
+    @IBOutlet weak var albumTitleLabel: UILabel!
+    @IBOutlet weak var albumCountLabel: UILabel!
 }
