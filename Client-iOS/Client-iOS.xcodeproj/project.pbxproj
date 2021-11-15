@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */; };
+		2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */; };
 		2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */; };
 		2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */; };
 		2B45DB342742305300C90091 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB332742305300C90091 /* TestVC.swift */; };
-		2B45DB3627423F9100C90091 /* QuickMenuCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3527423F9100C90091 /* QuickMenuCV.xib */; };
-		2B45DB3827423FB300C90091 /* QuickMenuCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB3727423FB300C90091 /* QuickMenuCV.swift */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
 		BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041988273EDAE700347610 /* SceneDelegate.swift */; };
@@ -34,11 +34,11 @@
 
 /* Begin PBXFileReference section */
 		2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Client_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCV.swift; sourceTree = "<group>"; };
+		2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCV.xib; sourceTree = "<group>"; };
 		2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCVC.swift; sourceTree = "<group>"; };
 		2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCVC.xib; sourceTree = "<group>"; };
 		2B45DB332742305300C90091 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
-		2B45DB3527423F9100C90091 /* QuickMenuCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCV.xib; sourceTree = "<group>"; };
-		2B45DB3727423FB300C90091 /* QuickMenuCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCV.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD041983273EDAE700347610 /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD041986273EDAE700347610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 				2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */,
 				2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */,
 				2B45DB332742305300C90091 /* TestVC.swift */,
-				2B45DB3527423F9100C90091 /* QuickMenuCV.xib */,
-				2B45DB3727423FB300C90091 /* QuickMenuCV.swift */,
+				2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */,
+				2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			files = (
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
 				2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */,
-				2B45DB3627423F9100C90091 /* QuickMenuCV.xib in Resources */,
+				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD10D12E273F977200B395B4 /* Image.swift in Sources */,
-				2B45DB3827423FB300C90091 /* QuickMenuCV.swift in Sources */,
+				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,
 				BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */,
