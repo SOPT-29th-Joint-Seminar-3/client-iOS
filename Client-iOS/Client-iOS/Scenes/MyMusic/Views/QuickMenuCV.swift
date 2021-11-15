@@ -26,16 +26,19 @@ class QuickMenuCV: UICollectionViewCell {
         registerNib()
     }
     
+    // MARK: - Custom Method
     func registerNib() {
         let xibName = UINib(nibName: "QuickMenuCVC", bundle: nil)
         quickMenuCollectionView.register(xibName, forCellWithReuseIdentifier: "QuickMenuCVC")
     }
 }
 
+// MARK: - UICollectionViewDataSource
 extension QuickMenuCV: UICollectionViewDelegate {
     
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension QuickMenuCV: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 162, height: 162)
@@ -54,6 +57,7 @@ extension QuickMenuCV: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - UICollectionViewDataSource
 extension QuickMenuCV: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4

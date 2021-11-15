@@ -9,8 +9,10 @@ import UIKit
 
 class TestVC: UIViewController {
 
+    // MARK: - @IBOutlet
     @IBOutlet weak var testCollectionView: UICollectionView!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,7 @@ class TestVC: UIViewController {
         registerNib()
     }
     
+    // MARK: - Custom Method
     func registerNib() {
         let xibName = UINib(nibName: "QuickMenuCV", bundle: nil)
         testCollectionView.register(xibName, forCellWithReuseIdentifier: "QuickMenuCV")
@@ -27,10 +30,12 @@ class TestVC: UIViewController {
 
 }
 
+// MARK: - UICollectionViewDelegate
 extension TestVC: UICollectionViewDelegate {
     
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension TestVC: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 380)
@@ -49,6 +54,7 @@ extension TestVC: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - UICollectionViewDataSource
 extension TestVC: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
