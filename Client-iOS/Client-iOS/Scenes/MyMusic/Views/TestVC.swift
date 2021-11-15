@@ -8,11 +8,6 @@
 import UIKit
 
 class TestVC: UIViewController {
-    
-    // MARK: - Dummy Data
-    var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
-    var iconList = [""]
-    var countList = [55, 2, 127, 87]
 
     @IBOutlet weak var testCollectionView: UICollectionView!
     
@@ -32,11 +27,11 @@ class TestVC: UIViewController {
 
 }
 
-extension UIViewController: UICollectionViewDelegate {
+extension TestVC: UICollectionViewDelegate {
     
 }
 
-extension UIViewController: UICollectionViewDelegateFlowLayout {
+extension TestVC: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 380)
     }
@@ -54,7 +49,7 @@ extension UIViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension UIViewController: UICollectionViewDataSource {
+extension TestVC: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickMenuCV", for: indexPath) as? QuickMenuCV else {return UICollectionViewCell()}

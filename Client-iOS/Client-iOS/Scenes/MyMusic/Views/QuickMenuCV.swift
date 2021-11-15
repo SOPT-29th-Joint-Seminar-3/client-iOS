@@ -9,6 +9,11 @@ import UIKit
 
 class QuickMenuCV: UICollectionViewCell {
     
+    // MARK: - Dummy Data
+    var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
+    var iconList = [""]
+    var countList = [55, 2, 127, 87]
+    
     @IBOutlet weak var quickMenuCollectionView: UICollectionView!
     
     // MARK: - Life Cycle
@@ -27,11 +32,11 @@ class QuickMenuCV: UICollectionViewCell {
     }
 }
 
-extension UICollectionViewCell: UICollectionViewDelegate {
+extension QuickMenuCV: UICollectionViewDelegate {
     
 }
 
-extension UICollectionViewCell: UICollectionViewDelegateFlowLayout {
+extension QuickMenuCV: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 162, height: 162)
     }
@@ -49,7 +54,7 @@ extension UICollectionViewCell: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension UICollectionViewCell: UICollectionViewDataSource {
+extension QuickMenuCV: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -59,8 +64,15 @@ extension UICollectionViewCell: UICollectionViewDataSource {
     
         cell.iconImageView.backgroundColor = .yellow
         cell.backImageView.backgroundColor = .gray.withAlphaComponent(0.5)
-        cell.count = 555
-        cell.categoryLabel.text = "내가 좋아하는"
+        cell.countLabel.text = "\(countList[indexPath.item])곡"
+        cell.categoryLabel.text = "\(categoryList[indexPath.item])"
+        
+        let font = UIFont.systemFont(ofSize: 14)
+        let fullText = cell.countLabel.text ?? ""
+        let range = (fullText as NSString).range(of: "곡")
+        let attributedString = NSMutableAttributedString(string: fullText)
+        attributedString.addAttribute(.font, value: font, range: range)
+        cell.countLabel.attributedText = attributedString
         
         return cell
     }
