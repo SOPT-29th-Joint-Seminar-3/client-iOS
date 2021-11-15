@@ -8,15 +8,14 @@
 import UIKit
 
 class QuickMenuCVC: UICollectionViewCell {
-    
-    // MARK: - Dummy Data
-    let categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
-    let iconList = [""]
 
     // MARK: - $IBOutlet
     @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    
+    var count = 127
     
     // MARK: - Life Cycle
     override func awakeFromNib() {
@@ -29,7 +28,15 @@ class QuickMenuCVC: UICollectionViewCell {
     func configUI() {
         backImageView.layer.cornerRadius = 12
         
+        countLabel.text = "\(count)곡"
+        
         /// countLabel medium 32 + "곡" 부분만 따로 meduim 14
+        let font = UIFont.systemFont(ofSize: 14)
+        let fullText = countLabel.text ?? ""
+        let range = (fullText as NSString).range(of: "곡")
+        let attributedString = NSMutableAttributedString(string: fullText)
+        attributedString.addAttribute(.font, value: font, range: range)
+        countLabel.attributedText = attributedString
         
     }
 }
