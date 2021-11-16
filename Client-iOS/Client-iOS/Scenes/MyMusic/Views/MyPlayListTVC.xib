@@ -75,7 +75,7 @@
                 <outlet property="albumImageView" destination="WEU-gB-o4U" id="viz-kV-SOu"/>
                 <outlet property="albumTitleLabel" destination="m7n-FG-apS" id="Lt7-r8-FqN"/>
             </connections>
-            <point key="canvasLocation" x="145.6521739130435" y="-158.03571428571428"/>
+            <point key="canvasLocation" x="37" y="-158"/>
         </tableViewCell>
     </objects>
     <resources>
