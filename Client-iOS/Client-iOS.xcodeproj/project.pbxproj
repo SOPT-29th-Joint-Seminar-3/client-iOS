@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
+		5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */; };
+		5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */; };
+		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
 		BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041988273EDAE700347610 /* SceneDelegate.swift */; };
 		BD04198E273EDAE700347610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD04198C273EDAE700347610 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Client_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListTVC.xib; sourceTree = "<group>"; };
+		5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListTVC.swift; sourceTree = "<group>"; };
+		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD041983273EDAE700347610 /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD041986273EDAE700347610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +84,6 @@
 				5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */,
 				C897FAD892262CD4FC9DB981 /* Pods-Client-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +161,7 @@
 				BD10D125273F96F800B395B4 /* MyMusicVC.swift */,
 				BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */,
 				BD10D131273F97F800B395B4 /* Views */,
+				5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */,
+				5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */,
+				5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
+				5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */,
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
 			);
@@ -327,6 +336,7 @@
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,
 				BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */,
 				BD04199D273EDBA000347610 /* Extension+.swift in Sources */,
+				5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */,
 				BD10D12A273F975A00B395B4 /* Color.swift in Sources */,
 				BD10D12C273F976700B395B4 /* Typography.swift in Sources */,
 				BD10D126273F96F800B395B4 /* MyMusicVC.swift in Sources */,
@@ -334,6 +344,7 @@
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,
 				BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */,
 				BD10D13B273F999F00B395B4 /* MyMusicViewSample.swift in Sources */,
+				5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
