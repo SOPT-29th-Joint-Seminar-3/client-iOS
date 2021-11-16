@@ -11,8 +11,9 @@ class QuickMenuCV: UICollectionViewCell {
     
     // MARK: - Dummy Data
     var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
-    var iconList = [""]
+    var iconList = ["icn_heart", "icn_keep", "icn_time", "icn_play"]
     var countList = [55, 2, 127, 87]
+    var coverList = ["quickMenuCover_1", "quickMenuCover_2", "quickMenuCover_3", "quickMenuCover_4"]
     
     @IBOutlet weak var quickMenuCollectionView: UICollectionView!
     
@@ -66,8 +67,8 @@ extension QuickMenuCV: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickMenuCVC", for: indexPath) as? QuickMenuCVC else {return UICollectionViewCell()}
     
-        cell.iconImageView.backgroundColor = .yellow
-        cell.backImageView.backgroundColor = .gray.withAlphaComponent(0.5)
+        cell.iconImageView.image = UIImage(named: "\(iconList[indexPath.item])")
+        cell.backImageView.image = UIImage(named: "\(coverList[indexPath.item])")
         cell.countLabel.text = "\(countList[indexPath.item])곡"
         cell.categoryLabel.text = "\(categoryList[indexPath.item])"
         
