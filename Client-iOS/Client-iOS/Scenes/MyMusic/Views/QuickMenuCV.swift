@@ -72,7 +72,7 @@ extension QuickMenuCV: UICollectionViewDataSource {
         cell.countLabel.text = "\(countList[indexPath.item])곡"
         cell.categoryLabel.text = "\(categoryList[indexPath.item])"
         
-        let font = UIFont.systemFont(ofSize: 14)
+        let font = GenieTypoStyle.title.font
         let fullText = cell.countLabel.text ?? ""
         let range = (fullText as NSString).range(of: "곡")
         let attributedString = NSMutableAttributedString(string: fullText)
