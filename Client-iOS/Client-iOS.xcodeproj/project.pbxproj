@@ -30,6 +30,10 @@
 		BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */; };
 		BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */; };
 		BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */; };
+		BDF821992740178C00394812 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF821982740178C00394812 /* Colors.xcassets */; };
+		BDF8219E27401D1800394812 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDF8219B27401D1700394812 /* NotoSansKR-Bold.otf */; };
+		BDF8219F27401D1800394812 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDF8219C27401D1700394812 /* NotoSansKR-Medium.otf */; };
+		BDF821A027401D1800394812 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDF8219D27401D1800394812 /* NotoSansKR-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewSample.swift; sourceTree = "<group>"; };
 		BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMusicVC.storyboard; sourceTree = "<group>"; };
 		BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistDetailVC.storyboard; sourceTree = "<group>"; };
+		BDF821982740178C00394812 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BDF8219B27401D1700394812 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		BDF8219C27401D1700394812 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		BDF8219D27401D1800394812 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		C897FAD892262CD4FC9DB981 /* Pods-Client-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.release.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,10 +132,12 @@
 		BD04199A273EDB5A00347610 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDF8219A27401CB300394812 /* Fonts */,
 				BD04198F273EDAE800347610 /* Assets.xcassets */,
 				BD041994273EDAE800347610 /* Info.plist */,
 				BD04198C273EDAE700347610 /* Main.storyboard */,
 				BD041991273EDAE800347610 /* LaunchScreen.storyboard */,
+				BDF821982740178C00394812 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -219,6 +229,16 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		BDF8219A27401CB300394812 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BDF8219B27401D1700394812 /* NotoSansKR-Bold.otf */,
+				BDF8219C27401D1700394812 /* NotoSansKR-Medium.otf */,
+				BDF8219D27401D1800394812 /* NotoSansKR-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,8 +302,12 @@
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
 				2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */,
 				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
+				BDF821A027401D1800394812 /* NotoSansKR-Regular.otf in Resources */,
+				BDF8219E27401D1800394812 /* NotoSansKR-Bold.otf in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
+				BDF8219F27401D1800394812 /* NotoSansKR-Medium.otf in Resources */,
+				BDF821992740178C00394812 /* Colors.xcassets in Resources */,
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
 			);
