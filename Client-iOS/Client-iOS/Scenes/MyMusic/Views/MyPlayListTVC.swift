@@ -18,9 +18,9 @@ class MyPlayListTVC: UITableViewCell {
     @IBOutlet weak var albumTitleLabel: UILabel!
     @IBOutlet weak var albumCountLabel: UILabel!
     
-    func setData(image: UIImage, title: String, count: Int) {
-        albumImageView.image = image
-        albumTitleLabel.text = title
-        albumCountLabel.text = "\(count)곡"
+    func setData(data: MyPlayListForm) {
+        albumImageView.image = data.albumImage
+        albumTitleLabel.text = data.albumTitle
+        albumCountLabel.text = "\(data.albumCount)곡"
     }
 }
