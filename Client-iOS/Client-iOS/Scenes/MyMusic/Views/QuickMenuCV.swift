@@ -10,10 +10,10 @@ import UIKit
 class QuickMenuCV: UICollectionViewCell {
     
     // MARK: - Dummy Data
-    var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
-    var iconList = ["icn_heart", "icn_keep", "icn_time", "icn_play"]
-    var countList = [55, 2, 127, 87]
-    var coverList = ["quickMenuCover_1", "quickMenuCover_2", "quickMenuCover_3", "quickMenuCover_4"]
+    private var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
+    private var iconList = ["icn_heart", "icn_keep", "icn_time", "icn_play"]
+    private var countList = [55, 2, 127, 87]
+    private var coverList = ["quickMenuCover_1", "quickMenuCover_2", "quickMenuCover_3", "quickMenuCover_4"]
     
     @IBOutlet weak var quickMenuCollectionView: UICollectionView!
     
@@ -72,12 +72,7 @@ extension QuickMenuCV: UICollectionViewDataSource {
         cell.countLabel.text = "\(countList[indexPath.item])곡"
         cell.categoryLabel.text = "\(categoryList[indexPath.item])"
         
-        let font = GenieTypoStyle.title.font
-        let fullText = cell.countLabel.text ?? ""
-        let range = (fullText as NSString).range(of: "곡")
-        let attributedString = NSMutableAttributedString(string: fullText)
-        attributedString.addAttribute(.font, value: font, range: range)
-        cell.countLabel.attributedText = attributedString
+        cell.configUI()
         
         return cell
     }

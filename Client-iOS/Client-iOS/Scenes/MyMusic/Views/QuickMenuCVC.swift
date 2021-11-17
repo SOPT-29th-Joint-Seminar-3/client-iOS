@@ -18,12 +18,17 @@ class QuickMenuCVC: UICollectionViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        configUI()
     }
 
     // MARK: - Custom Method
     func configUI() {
         backImageView.layer.cornerRadius = 12
+        
+        let font = GenieTypoStyle.title.font
+        let fullText = countLabel.text ?? ""
+        let range = (fullText as NSString).range(of: "곡")
+        let attributedString = NSMutableAttributedString(string: fullText)
+        attributedString.addAttribute(.font, value: font, range: range)
+        countLabel.attributedText = attributedString
     }
 }
