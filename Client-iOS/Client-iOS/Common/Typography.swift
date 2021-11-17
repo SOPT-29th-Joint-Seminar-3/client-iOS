@@ -25,6 +25,7 @@ public enum GenieTypoStyle: CaseIterable {
     case body
     case caption
     case smallCaption
+    case number
 }
 
 // MARK: - 타이포 스타일에 따라 Genie에서 사용되는 font 정의
@@ -38,6 +39,7 @@ extension GenieTypoStyle {
         case .body:         return UIFont(name: NotoSansKRType.bold.name, size: 14)!
         case .caption:      return UIFont(name: NotoSansKRType.bold.name, size: 12)!
         case .smallCaption: return UIFont(name: NotoSansKRType.bold.name, size: 9)!
+        case .number: return UIFont(name: NotoSansKRType.medium.name, size: 32)!
         }
     }
 }
