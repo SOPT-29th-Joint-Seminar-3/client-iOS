@@ -19,7 +19,7 @@ class AlbumCoverCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     @IBAction func touchUpBackButton(_ sender: Any) {
