@@ -43,6 +43,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btn_back"/>
+                                <connections>
+                                    <action selector="touchUpBackButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3D1-ag-Ihe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qg-Vc-xnB" userLabel="profileButton">
                                 <rect key="frame" x="322" y="50" width="40" height="40"/>
@@ -119,41 +122,36 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="icn_edit"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-Pf-84p" userLabel="rightThirdImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerCover_5" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-Pf-84p" userLabel="rightThirdImageView">
                                 <rect key="frame" x="203.5" y="129" width="90" height="90"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="9tb-MY-qcv"/>
                                     <constraint firstAttribute="width" secondItem="FjO-Pf-84p" secondAttribute="height" multiplier="1:1" id="oHX-ar-Vbc"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-RJ-Dxa" userLabel="leftThirdImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerCover_4" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-RJ-Dxa" userLabel="leftThirdImageView">
                                 <rect key="frame" x="81.5" y="129" width="90" height="90"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="U0k-dN-ltO"/>
                                     <constraint firstAttribute="width" secondItem="ERg-RJ-Dxa" secondAttribute="height" id="ncm-HA-1A3"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z9i-g2-BaZ" userLabel="rightSecondImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerCover_2" translatesAutoresizingMaskIntoConstraints="NO" id="z9i-g2-BaZ" userLabel="rightSecondImageView">
                                 <rect key="frame" x="163.5" y="119" width="110" height="110"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Lsv-5e-Eak"/>
                                     <constraint firstAttribute="width" secondItem="z9i-g2-BaZ" secondAttribute="height" id="xBt-Wn-dNd"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-bf-KaR" userLabel="leftSecondImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerCover_3" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-bf-KaR" userLabel="leftSecondImageView">
                                 <rect key="frame" x="101.5" y="119" width="110" height="110"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u2t-bf-KaR" secondAttribute="height" id="Lxt-B2-xau"/>
                                     <constraint firstAttribute="width" constant="110" id="qYc-SY-Cji"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-zf-hAt" userLabel="centerImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerCover_1" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-zf-hAt" userLabel="centerImageView">
                                 <rect key="frame" x="122.5" y="109" width="130" height="130"/>
-                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="5OY-Is-VF5"/>
                                     <constraint firstAttribute="width" secondItem="Lez-zf-hAt" secondAttribute="height" id="SGK-pS-uwK"/>
@@ -207,12 +205,26 @@
                 <constraint firstAttribute="bottom" secondItem="nBU-co-COT" secondAttribute="bottom" id="zdC-1c-Zin"/>
             </constraints>
             <size key="customSize" width="229" height="202"/>
+            <connections>
+                <outlet property="centerImageView" destination="Lez-zf-hAt" id="Ixr-jr-Bww"/>
+                <outlet property="dateLabel" destination="DUE-fu-9HC" id="oba-Dq-5cV"/>
+                <outlet property="leftSecondImageView" destination="u2t-bf-KaR" id="rOW-iC-8PD"/>
+                <outlet property="leftThirdImageView" destination="ERg-RJ-Dxa" id="G1c-3P-7XL"/>
+                <outlet property="playButton" destination="tSK-m4-cfk" id="ato-Za-nbW"/>
+                <outlet property="rightSecondImageView" destination="z9i-g2-BaZ" id="vIX-A7-gCC"/>
+                <outlet property="rightThirdImageView" destination="FjO-Pf-84p" id="7fV-SW-oSs"/>
+            </connections>
             <point key="canvasLocation" x="267.39130434782612" y="196.875"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="btn_back" width="40" height="40"/>
         <image name="btn_play" width="56" height="56"/>
+        <image name="headerCover_1" width="130" height="130"/>
+        <image name="headerCover_2" width="130" height="130"/>
+        <image name="headerCover_3" width="130" height="130"/>
+        <image name="headerCover_4" width="130" height="130"/>
+        <image name="headerCover_5" width="130" height="130"/>
         <image name="icn_edit" width="26" height="26"/>
         <image name="icn_music" width="26" height="26"/>
         <image name="icn_profile" width="36" height="36"/>
@@ -222,12 +234,6 @@
         <image name="topBackImage" width="1500" height="832"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
