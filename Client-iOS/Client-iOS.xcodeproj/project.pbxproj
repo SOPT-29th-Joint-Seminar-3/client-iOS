@@ -16,6 +16,7 @@
 		5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
+		BD01C867274637D2003619F9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C866274637D2003619F9 /* BaseVC.swift */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
 		BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041988273EDAE700347610 /* SceneDelegate.swift */; };
 		BD04198E273EDAE700347610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD04198C273EDAE700347610 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListTVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD01C866274637D2003619F9 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		BD041983273EDAE700347610 /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD041986273EDAE700347610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD041988273EDAE700347610 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 				C897FAD892262CD4FC9DB981 /* Pods-Client-iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD01C865274637BB003619F9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BD01C866274637D2003619F9 /* BaseVC.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		BD04197A273EDAE700347610 = {
@@ -199,6 +209,7 @@
 		BD10D128273F973B00B395B4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BD01C865274637BB003619F9 /* Base */,
 				BD10D129273F975A00B395B4 /* Color.swift */,
 				BD10D12B273F976700B395B4 /* Typography.swift */,
 				BD10D12D273F977200B395B4 /* Image.swift */,
@@ -385,6 +396,7 @@
 				BD10D12C273F976700B395B4 /* Typography.swift in Sources */,
 				BD10D126273F96F800B395B4 /* MyMusicVC.swift in Sources */,
 				BD10D137273F987200B395B4 /* MainTabBar.swift in Sources */,
+				BD01C867274637D2003619F9 /* BaseVC.swift in Sources */,
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,
 				BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */,
 				BD10D13B273F999F00B395B4 /* MyMusicViewSample.swift in Sources */,
