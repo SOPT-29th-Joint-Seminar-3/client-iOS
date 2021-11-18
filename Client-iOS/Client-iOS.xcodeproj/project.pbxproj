@@ -15,11 +15,11 @@
 		2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */; };
 		2B45DB342742305300C90091 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB332742305300C90091 /* TestVC.swift */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
-		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
-		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
 		5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
+		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
+		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
 		BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041988273EDAE700347610 /* SceneDelegate.swift */; };
 		BD04198E273EDAE700347610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD04198C273EDAE700347610 /* Main.storyboard */; };
@@ -45,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Client_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
-		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
 		2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCoverCVC.swift; sourceTree = "<group>"; };
 		2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCoverCVC.xib; sourceTree = "<group>"; };
 		2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCV.swift; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListTVC.xib; sourceTree = "<group>"; };
 		5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListTVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
+		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
+		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD041983273EDAE700347610 /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD041986273EDAE700347610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -555,7 +555,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -586,7 +585,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
