@@ -34,9 +34,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0PP-PL-LNB">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F6W-CN-xuP">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F6W-CN-xuP">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -59,7 +59,7 @@
                         <constraints>
                             <constraint firstItem="i8w-2m-xTe" firstAttribute="trailing" secondItem="0PP-PL-LNB" secondAttribute="trailing" id="Mxq-QS-HA3"/>
                             <constraint firstItem="0PP-PL-LNB" firstAttribute="leading" secondItem="i8w-2m-xTe" secondAttribute="leading" id="PQB-tP-ztD"/>
-                            <constraint firstItem="0PP-PL-LNB" firstAttribute="top" secondItem="i8w-2m-xTe" secondAttribute="top" id="b5A-3l-1UP"/>
+                            <constraint firstItem="0PP-PL-LNB" firstAttribute="top" secondItem="na6-Rz-n28" secondAttribute="top" id="b5A-3l-1UP"/>
                             <constraint firstItem="i8w-2m-xTe" firstAttribute="bottom" secondItem="0PP-PL-LNB" secondAttribute="bottom" id="y8f-hm-3fU"/>
                         </constraints>
                     </view>
