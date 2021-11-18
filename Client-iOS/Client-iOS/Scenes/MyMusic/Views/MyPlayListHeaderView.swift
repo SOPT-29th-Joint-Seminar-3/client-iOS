@@ -8,9 +8,15 @@
 import UIKit
 
 class MyPlayListHeaderView: UIView {
+    @IBOutlet weak var newBtn: UIButton!
+    @IBOutlet weak var imgBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setUpUI()
     }
-
+    
+    func setUpUI() {
+        newBtn.layer.cornerRadius = newBtn.frame.height / 0.260869
+        imgBtn.layer.cornerRadius = imgBtn.frame.height / 0.260869
+    }
 }
