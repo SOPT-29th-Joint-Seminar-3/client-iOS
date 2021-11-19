@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Tvx-6p-sQJ" customClass="AlbumTrackHeaderView" customModule="Client_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수록곡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-7h-5sh">
+                    <rect key="frame" x="19" y="11" width="50" height="27"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K92-zN-sPa">
+                    <rect key="frame" x="20" y="84" width="162.5" height="46"/>
+                    <color key="backgroundColor" name="white_1"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="7.5" maxY="0.0"/>
+                    <state key="normal" title="곡 직접 추가" image="icn_newPlayList">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32z-9n-80Q">
+                    <rect key="frame" x="192.5" y="84" width="162.5" height="46"/>
+                    <color key="backgroundColor" name="white_1"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="7" maxY="0.0"/>
+                    <state key="normal" title="이미지로 곡 추가" image="icn_imgToList">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-L4-Xf2">
+                    <rect key="frame" x="326" y="54" width="30" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Pwg-Y6-36K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="편집"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIl-if-RUl">
+                    <rect key="frame" x="255" y="54" width="34" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="8GT-SO-gDx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="편집순">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-j2-XGq">
+                    <rect key="frame" x="289" y="58" width="17" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="mIX-Sl-VvF"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icn_down"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrJ-MO-TV0">
+                    <rect key="frame" x="76" y="11" width="50" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="9VV-VI-zUd"/>
+                        <constraint firstAttribute="width" constant="50" id="inw-xu-wkD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="18"/>
+                    <color key="textColor" name="primary_blue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m5-Nh-56p">
+                    <rect key="frame" x="21" y="55" width="60" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="So4-SC-EDT"/>
+                        <constraint firstAttribute="width" constant="60" id="heB-tq-QjA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5.5" maxY="0.0"/>
+                    <state key="normal" title="전체선택" image="icn_check">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnt-Ep-Nnr">
+                    <rect key="frame" x="94" y="55" width="62" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="10q-9n-Ebu"/>
+                        <constraint firstAttribute="height" constant="18" id="v3R-Oq-FND"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5.5" maxY="0.0"/>
+                    <state key="normal" title="전체듣기" image="icn_smallPlay">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="SdG-c9-Mbl"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BrJ-MO-TV0" firstAttribute="top" secondItem="Tvx-6p-sQJ" secondAttribute="top" constant="11" id="0Wg-m9-FLU"/>
+                <constraint firstItem="gnt-Ep-Nnr" firstAttribute="leading" secondItem="4m5-Nh-56p" secondAttribute="trailing" constant="13" id="3mO-PJ-8ld"/>
+                <constraint firstItem="SdG-c9-Mbl" firstAttribute="bottom" secondItem="32z-9n-80Q" secondAttribute="bottom" id="4TX-Bu-gtb"/>
+                <constraint firstItem="K92-zN-sPa" firstAttribute="top" secondItem="gnt-Ep-Nnr" secondAttribute="bottom" constant="11" id="9b3-uy-6WI"/>
+                <constraint firstItem="wjW-L4-Xf2" firstAttribute="leading" secondItem="8IM-j2-XGq" secondAttribute="trailing" constant="20" id="Hki-eR-dcJ"/>
+                <constraint firstItem="8IM-j2-XGq" firstAttribute="leading" secondItem="SIl-if-RUl" secondAttribute="trailing" id="IKw-P7-ofG"/>
+                <constraint firstItem="K92-zN-sPa" firstAttribute="width" secondItem="Tvx-6p-sQJ" secondAttribute="width" multiplier="0.433155" id="JaN-t4-OiX"/>
+                <constraint firstItem="SdG-c9-Mbl" firstAttribute="bottom" secondItem="K92-zN-sPa" secondAttribute="bottom" id="REk-Fp-0Da"/>
+                <constraint firstItem="4m5-Nh-56p" firstAttribute="leading" secondItem="SdG-c9-Mbl" secondAttribute="leading" constant="21" id="USU-wz-Bmv"/>
+                <constraint firstItem="32z-9n-80Q" firstAttribute="top" secondItem="SIl-if-RUl" secondAttribute="bottom" constant="15" id="UTn-v7-t9J"/>
+                <constraint firstItem="K92-zN-sPa" firstAttribute="leading" secondItem="SdG-c9-Mbl" secondAttribute="leading" constant="20" id="WAe-me-nP8"/>
+                <constraint firstItem="K92-zN-sPa" firstAttribute="top" secondItem="4m5-Nh-56p" secondAttribute="bottom" constant="12" id="WQS-Vh-rY3"/>
+                <constraint firstItem="SdG-c9-Mbl" firstAttribute="trailing" secondItem="wjW-L4-Xf2" secondAttribute="trailing" constant="19" id="ZPq-AU-AhX"/>
+                <constraint firstItem="32z-9n-80Q" firstAttribute="height" secondItem="Tvx-6p-sQJ" secondAttribute="height" multiplier="0.353846" id="aga-8W-XxD"/>
+                <constraint firstItem="rWd-7h-5sh" firstAttribute="top" secondItem="Tvx-6p-sQJ" secondAttribute="top" constant="11" id="anf-jU-eCg"/>
+                <constraint firstItem="32z-9n-80Q" firstAttribute="width" secondItem="Tvx-6p-sQJ" secondAttribute="width" multiplier="0.433155" id="cFX-HG-CPf"/>
+                <constraint firstItem="32z-9n-80Q" firstAttribute="top" secondItem="8IM-j2-XGq" secondAttribute="bottom" constant="11" id="evC-D5-FYW"/>
+                <constraint firstItem="SdG-c9-Mbl" firstAttribute="trailing" secondItem="32z-9n-80Q" secondAttribute="trailing" constant="20" id="i74-EE-rBo"/>
+                <constraint firstItem="BrJ-MO-TV0" firstAttribute="leading" secondItem="rWd-7h-5sh" secondAttribute="trailing" constant="7" id="jyw-Z3-uL2"/>
+                <constraint firstItem="K92-zN-sPa" firstAttribute="height" secondItem="Tvx-6p-sQJ" secondAttribute="height" multiplier="0.353846" id="n0t-qe-mrv"/>
+                <constraint firstItem="rWd-7h-5sh" firstAttribute="leading" secondItem="SdG-c9-Mbl" secondAttribute="leading" constant="19" id="pvl-m8-mPU"/>
+                <constraint firstItem="32z-9n-80Q" firstAttribute="top" secondItem="wjW-L4-Xf2" secondAttribute="bottom" constant="15" id="xqc-h6-cEC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgBtn" destination="32z-9n-80Q" id="dUy-9w-b27"/>
+                <outlet property="newBtn" destination="K92-zN-sPa" id="qn7-o6-Edm"/>
+                <outlet property="songCountLabel" destination="BrJ-MO-TV0" id="LVj-Yn-KGg"/>
+            </connections>
+            <point key="canvasLocation" x="13.768115942028986" y="-54.241071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icn_check" width="10.5" height="8"/>
+        <image name="icn_down" width="17" height="16"/>
+        <image name="icn_imgToList" width="15.5" height="15.5"/>
+        <image name="icn_newPlayList" width="14.5" height="15"/>
+        <image name="icn_smallPlay" width="8" height="9"/>
+        <namedColor name="primary_blue">
+            <color red="0.25882352941176473" green="0.58039215686274515" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white_1">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
