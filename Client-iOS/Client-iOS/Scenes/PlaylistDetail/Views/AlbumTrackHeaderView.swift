@@ -13,6 +13,7 @@ class AlbumTrackHeaderView: UIView {
     @IBOutlet weak var songCountLabel: UILabel!
     override class func awakeFromNib() {
         super.awakeFromNib()
+        setUpUI()
     }
     
     func setUpUI() {
