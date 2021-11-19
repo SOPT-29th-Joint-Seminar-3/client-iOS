@@ -11,7 +11,8 @@ class AlbumTrackHeaderView: UIView {
     @IBOutlet weak var newBtn: UIButton!
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var songCountLabel: UILabel!
-    override class func awakeFromNib() {
+    
+    override func awakeFromNib() {
         super.awakeFromNib()
         setUpUI()
     }

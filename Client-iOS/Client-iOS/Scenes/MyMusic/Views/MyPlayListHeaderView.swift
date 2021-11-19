@@ -11,6 +11,7 @@ class MyPlayListHeaderView: UIView {
     @IBOutlet weak var newBtn: UIButton!
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var songCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpUI()
