@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MyPlayListTVC: UITableViewCell {
-    static let ID = "MyPlayListTVC"
+class MyPlayListCVC: UICollectionViewCell {
+    static let ID = "MyPlayListCVC"
     
     @IBOutlet weak var albumImageView: UIImageView! {
         didSet {
