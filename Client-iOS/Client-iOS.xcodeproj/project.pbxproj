@@ -20,6 +20,7 @@
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
 		5CA13CF82747343A007FAFFF /* AlbumTrackTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA13CF62747343A007FAFFF /* AlbumTrackTVC.swift */; };
 		5CA13CF92747343A007FAFFF /* AlbumTrackTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA13CF72747343A007FAFFF /* AlbumTrackTVC.xib */; };
+		5CA13CFB27479A5D007FAFFF /* AlbumTrackListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */; };
 		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
 		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
 		BD01C867274637D2003619F9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C866274637D2003619F9 /* BaseVC.swift */; };
@@ -61,6 +62,7 @@
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
 		5CA13CF62747343A007FAFFF /* AlbumTrackTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackTVC.swift; sourceTree = "<group>"; };
 		5CA13CF72747343A007FAFFF /* AlbumTrackTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTrackTVC.xib; sourceTree = "<group>"; };
+		5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackListForm.swift; sourceTree = "<group>"; };
 		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
 		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				BD10D12F273F979700B395B4 /* PlaylistDetailVC.swift */,
 				BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */,
 				BD10D132273F97FB00B395B4 /* Views */,
+				5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */,
 			);
 			path = PlaylistDetail;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				BD01C86927463CA1003619F9 /* PreparingVC.swift in Sources */,
 				2B009FDF2743F51C009A5BBE /* AlbumCoverCVC.swift in Sources */,
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,
+				5CA13CFB27479A5D007FAFFF /* AlbumTrackListForm.swift in Sources */,
 				BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */,
 				BD04199D273EDBA000347610 /* Extension+.swift in Sources */,
 				2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */,
