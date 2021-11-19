@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyPlayListCVC" id="xhc-HS-Zcv" customClass="MyPlayListCVC" customModule="Client_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oXM-IT-D6c">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WEU-gB-o4U">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WEU-gB-o4U" secondAttribute="height" multiplier="1:1" id="qqg-2K-6Dn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-FG-apS">
+                        <rect key="frame" x="83" y="16" width="34.5" height="20"/>
+                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-jR-NCI">
+                        <rect key="frame" x="83" y="39" width="29.5" height="17"/>
+                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="12"/>
+                        <color key="textColor" name="grey_2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iW2-6i-HxZ">
+                        <rect key="frame" x="282" y="22" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iW2-6i-HxZ" secondAttribute="height" multiplier="1:1" id="Plg-h1-02n"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="icn_bigplay"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-wC-EZr">
+                        <rect key="frame" x="321" y="22" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sXH-wC-EZr" secondAttribute="height" multiplier="1:1" id="KsZ-ZI-fCg"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="" image="icn_plus"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iW2-6i-HxZ" firstAttribute="centerY" secondItem="oXM-IT-D6c" secondAttribute="centerY" id="6D8-Fp-dgL"/>
+                    <constraint firstItem="iW2-6i-HxZ" firstAttribute="height" secondItem="sXH-wC-EZr" secondAttribute="height" id="AI1-9j-uIp"/>
+                    <constraint firstItem="sXH-wC-EZr" firstAttribute="height" secondItem="oXM-IT-D6c" secondAttribute="height" multiplier="0.352941" id="GAF-EF-b4z"/>
+                    <constraint firstItem="m7n-FG-apS" firstAttribute="top" secondItem="oXM-IT-D6c" secondAttribute="top" constant="16" id="JZV-8s-vBQ"/>
+                    <constraint firstItem="sXH-wC-EZr" firstAttribute="leading" secondItem="iW2-6i-HxZ" secondAttribute="trailing" constant="15" id="LSO-27-IS6"/>
+                    <constraint firstItem="WEU-gB-o4U" firstAttribute="top" secondItem="oXM-IT-D6c" secondAttribute="top" id="Yh0-Rd-wxs"/>
+                    <constraint firstItem="m7n-FG-apS" firstAttribute="leading" secondItem="WEU-gB-o4U" secondAttribute="trailing" constant="15" id="dhs-IK-joI"/>
+                    <constraint firstItem="y3u-jR-NCI" firstAttribute="leading" secondItem="WEU-gB-o4U" secondAttribute="trailing" constant="15" id="eUf-f7-Ycv"/>
+                    <constraint firstItem="sXH-wC-EZr" firstAttribute="centerY" secondItem="oXM-IT-D6c" secondAttribute="centerY" id="ebp-Vg-geN"/>
+                    <constraint firstAttribute="bottom" secondItem="y3u-jR-NCI" secondAttribute="bottom" constant="12" id="gQn-oX-eDw"/>
+                    <constraint firstItem="WEU-gB-o4U" firstAttribute="leading" secondItem="oXM-IT-D6c" secondAttribute="leading" id="tbu-1F-4oC"/>
+                    <constraint firstAttribute="trailing" secondItem="sXH-wC-EZr" secondAttribute="trailing" id="uij-pH-7Gg"/>
+                    <constraint firstAttribute="bottom" secondItem="WEU-gB-o4U" secondAttribute="bottom" id="xE3-ZB-6Rm"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="345" height="92"/>
+            <connections>
+                <outlet property="albumCountLabel" destination="y3u-jR-NCI" id="Y3b-28-cAJ"/>
+                <outlet property="albumImageView" destination="WEU-gB-o4U" id="jHf-Yx-uQG"/>
+                <outlet property="albumTitleLabel" destination="m7n-FG-apS" id="xiT-FV-sMm"/>
+            </connections>
+            <point key="canvasLocation" x="36.956521739130437" y="-40.848214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icn_bigplay" width="24" height="24"/>
+        <image name="icn_plus" width="24" height="24"/>
+        <namedColor name="grey_2">
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
