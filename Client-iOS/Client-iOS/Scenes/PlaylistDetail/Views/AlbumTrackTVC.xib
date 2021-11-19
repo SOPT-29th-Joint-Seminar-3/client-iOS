@@ -38,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAe-Xx-mAX">
-                        <rect key="frame" x="62" y="27" width="36" height="17"/>
+                        <rect key="frame" x="62" y="27" width="31" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="amx-5M-1Tl"/>
                         </constraints>
@@ -73,7 +73,6 @@
                     <constraint firstItem="YMK-Pg-eT8" firstAttribute="centerY" secondItem="9Iz-a9-1VA" secondAttribute="centerY" id="4Cz-gM-DXy"/>
                     <constraint firstItem="zNN-Ld-OP7" firstAttribute="height" secondItem="8xi-dH-Kx1" secondAttribute="height" id="5Pg-2S-1m3"/>
                     <constraint firstItem="6Pe-tn-eew" firstAttribute="leading" secondItem="9Iz-a9-1VA" secondAttribute="leading" id="6HD-Eh-Gso"/>
-                    <constraint firstItem="WAe-Xx-mAX" firstAttribute="trailing" secondItem="8xi-dH-Kx1" secondAttribute="trailing" id="7yi-tm-whj"/>
                     <constraint firstItem="WAe-Xx-mAX" firstAttribute="top" secondItem="8xi-dH-Kx1" secondAttribute="bottom" id="P6K-pL-mde"/>
                     <constraint firstItem="6Pe-tn-eew" firstAttribute="top" secondItem="9Iz-a9-1VA" secondAttribute="top" id="Ut1-FF-IAx"/>
                     <constraint firstItem="bpD-dE-Crk" firstAttribute="centerY" secondItem="9Iz-a9-1VA" secondAttribute="centerY" id="X2w-Js-dyF"/>
@@ -89,6 +88,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="albumImageView" destination="6Pe-tn-eew" id="6zg-qU-Dwk"/>
+                <outlet property="artistLabel" destination="WAe-Xx-mAX" id="9cy-pr-zuD"/>
+                <outlet property="songTitleLabel" destination="8xi-dH-Kx1" id="MkG-wt-gnG"/>
             </connections>
             <point key="canvasLocation" x="36.956521739130437" y="-158.03571428571428"/>
         </tableViewCell>
