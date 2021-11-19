@@ -18,6 +18,8 @@
 		5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
+		5CA13CF82747343A007FAFFF /* AlbumTrackTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA13CF62747343A007FAFFF /* AlbumTrackTVC.swift */; };
+		5CA13CF92747343A007FAFFF /* AlbumTrackTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA13CF72747343A007FAFFF /* AlbumTrackTVC.xib */; };
 		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
 		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
 		BD01C867274637D2003619F9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C866274637D2003619F9 /* BaseVC.swift */; };
@@ -57,6 +59,8 @@
 		5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListTVC.xib; sourceTree = "<group>"; };
 		5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListTVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
+		5CA13CF62747343A007FAFFF /* AlbumTrackTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackTVC.swift; sourceTree = "<group>"; };
+		5CA13CF72747343A007FAFFF /* AlbumTrackTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTrackTVC.xib; sourceTree = "<group>"; };
 		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
 		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 				BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */,
 				2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */,
 				2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */,
+				5CA13CF62747343A007FAFFF /* AlbumTrackTVC.swift */,
+				5CA13CF72747343A007FAFFF /* AlbumTrackTVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
 				BDF821A027401D1800394812 /* NotoSansKR-Regular.otf in Resources */,
 				BDF8219E27401D1800394812 /* NotoSansKR-Bold.otf in Resources */,
+				5CA13CF92747343A007FAFFF /* AlbumTrackTVC.xib in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
 				5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */,
@@ -403,6 +410,7 @@
 				BD10D12E273F977200B395B4 /* Image.swift in Sources */,
 				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
+				5CA13CF82747343A007FAFFF /* AlbumTrackTVC.swift in Sources */,
 				BD01C86927463CA1003619F9 /* PreparingVC.swift in Sources */,
 				2B009FDF2743F51C009A5BBE /* AlbumCoverCVC.swift in Sources */,
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,
