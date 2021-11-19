@@ -7,8 +7,8 @@
 
 import UIKit
 
-class AlbumTrackTVC: UITableViewCell {
-    static let ID = "AlbumTrackTVC"
+class AlbumTrackCVC: UICollectionViewCell {
+    static let ID = "AlbumTrackCVC"
 
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var songTitleLabel: UILabel!
