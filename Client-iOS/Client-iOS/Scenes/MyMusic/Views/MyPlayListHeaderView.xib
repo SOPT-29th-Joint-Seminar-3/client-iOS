@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyPlayListHeaderView" customModule="Client_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 플레이리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRh-TX-lPZ">
+                    <rect key="frame" x="19" y="10.999999999999998" width="121" height="26.333333333333329"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qd-F2-Ydp">
+                    <rect key="frame" x="19" y="55" width="23" height="18"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFN-Gx-Vhq">
+                    <rect key="frame" x="20" y="84" width="162.33333333333334" height="46"/>
+                    <color key="backgroundColor" name="white_1"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="7.5" maxY="0.0"/>
+                    <state key="normal" title="새로 만들기" image="icn_newPlayList">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYX-8p-cJh">
+                    <rect key="frame" x="192.66666666666663" y="84" width="162.33333333333337" height="46"/>
+                    <color key="backgroundColor" name="white_1"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="7" maxY="0.0"/>
+                    <state key="normal" title="이미지로 곡 등록" image="icn_imgToList">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-qh-IfZ">
+                    <rect key="frame" x="326" y="54" width="30" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="jqh-HF-das"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="편집"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kof-vg-KXX">
+                    <rect key="frame" x="255" y="54" width="34" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="aGq-sa-4m5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="편집순">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czd-gi-9Vg">
+                    <rect key="frame" x="289" y="58" width="17" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="bav-LX-I6Q"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icn_down"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="211" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9K-vW-bfx">
+                    <rect key="frame" x="44" y="55" width="20" height="18"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <color key="textColor" name="primary_blue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kFN-Gx-Vhq" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.433155" id="1ZP-SM-p7i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aYX-8p-cJh" secondAttribute="bottom" id="7BI-Ks-Dtl"/>
+                <constraint firstItem="kFN-Gx-Vhq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Fbn-lQ-hoa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g0N-qh-IfZ" secondAttribute="trailing" constant="19" id="Fe2-vf-Gbd"/>
+                <constraint firstItem="kFN-Gx-Vhq" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.353846" id="G1g-9j-vDv"/>
+                <constraint firstItem="YRh-TX-lPZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="J6P-Su-IaM"/>
+                <constraint firstItem="kFN-Gx-Vhq" firstAttribute="top" secondItem="M9K-vW-bfx" secondAttribute="bottom" constant="11" id="JNc-ef-fbN"/>
+                <constraint firstItem="aYX-8p-cJh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.353846" id="MXP-Uk-6V0"/>
+                <constraint firstItem="g0N-qh-IfZ" firstAttribute="leading" secondItem="Czd-gi-9Vg" secondAttribute="trailing" constant="20" id="XFh-g1-PTN"/>
+                <constraint firstItem="7qd-F2-Ydp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="XXO-GU-uCj"/>
+                <constraint firstItem="YRh-TX-lPZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="c5N-sw-1V8"/>
+                <constraint firstItem="aYX-8p-cJh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.433155" id="eWi-1G-TS2"/>
+                <constraint firstItem="Czd-gi-9Vg" firstAttribute="leading" secondItem="Kof-vg-KXX" secondAttribute="trailing" id="hlC-jm-z3Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kFN-Gx-Vhq" secondAttribute="bottom" id="ihO-8v-dnQ"/>
+                <constraint firstItem="kFN-Gx-Vhq" firstAttribute="top" secondItem="7qd-F2-Ydp" secondAttribute="bottom" constant="11" id="iiA-Ax-7N7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aYX-8p-cJh" secondAttribute="trailing" constant="20" id="jJz-3P-7mA"/>
+                <constraint firstItem="aYX-8p-cJh" firstAttribute="top" secondItem="g0N-qh-IfZ" secondAttribute="bottom" constant="15" id="kkl-BA-nxl"/>
+                <constraint firstItem="M9K-vW-bfx" firstAttribute="leading" secondItem="7qd-F2-Ydp" secondAttribute="trailing" constant="2" id="sbX-GS-x4w"/>
+                <constraint firstItem="aYX-8p-cJh" firstAttribute="top" secondItem="Czd-gi-9Vg" secondAttribute="bottom" constant="11" id="siZ-Et-EXb"/>
+                <constraint firstItem="aYX-8p-cJh" firstAttribute="top" secondItem="Kof-vg-KXX" secondAttribute="bottom" constant="15" id="wXf-iB-46g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgBtn" destination="aYX-8p-cJh" id="rK8-Lo-QJC"/>
+                <outlet property="newBtn" destination="kFN-Gx-Vhq" id="aIr-22-7KT"/>
+                <outlet property="songCountLabel" destination="M9K-vW-bfx" id="1hh-20-i6q"/>
+            </connections>
+            <point key="canvasLocation" x="13.768115942028986" y="-53.804347826086961"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icn_down" width="17" height="16"/>
+        <image name="icn_imgToList" width="15.666666984558105" height="15.666666984558105"/>
+        <image name="icn_newPlayList" width="14.666666984558105" height="15"/>
+        <namedColor name="primary_blue">
+            <color red="0.25882352941176473" green="0.58039215686274515" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white_1">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

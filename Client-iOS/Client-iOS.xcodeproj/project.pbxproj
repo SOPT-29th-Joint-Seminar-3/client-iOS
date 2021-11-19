@@ -18,6 +18,8 @@
 		5C6D8768274101440033A2A4 /* MyPlayListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
+		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
+		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
 		BD01C867274637D2003619F9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C866274637D2003619F9 /* BaseVC.swift */; };
 		BD01C86927463CA1003619F9 /* PreparingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C86827463CA1003619F9 /* PreparingVC.swift */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
@@ -55,6 +57,8 @@
 		5C6D8767274101440033A2A4 /* MyPlayListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListTVC.xib; sourceTree = "<group>"; };
 		5C6D8769274101DB0033A2A4 /* MyPlayListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListTVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
+		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
+		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD01C866274637D2003619F9 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		BD01C86827463CA1003619F9 /* PreparingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingVC.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 		BD10D131273F97F800B395B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */,
+				5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */,
 				BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */,
 				2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */,
 				2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */,
@@ -340,6 +346,7 @@
 				BDF821992740178C00394812 /* Colors.xcassets in Resources */,
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
+				5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */,
 				2B009FE02743F51C009A5BBE /* AlbumCoverCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +418,7 @@
 				BD01C867274637D2003619F9 /* BaseVC.swift in Sources */,
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,
 				BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */,
+				5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */,
 				BD10D13B273F999F00B395B4 /* MyMusicViewSample.swift in Sources */,
 				5C6D876A274101DB0033A2A4 /* MyPlayListTVC.swift in Sources */,
 			);
@@ -562,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -592,7 +600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
