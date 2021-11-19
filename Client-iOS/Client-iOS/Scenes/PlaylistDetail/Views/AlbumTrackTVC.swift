@@ -8,9 +8,12 @@
 import UIKit
 
 class AlbumTrackTVC: UITableViewCell {
+    static let ID = "AlbumTrackTVC"
 
+    @IBOutlet weak var albumImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        albumImageView.layer.cornerRadius = albumImageView.frame.height * 0.106382
     }
 }
