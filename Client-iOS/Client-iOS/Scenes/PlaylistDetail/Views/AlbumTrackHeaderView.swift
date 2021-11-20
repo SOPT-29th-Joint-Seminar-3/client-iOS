@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AlbumTrackHeaderView: UIView {
+class AlbumTrackHeaderView: UICollectionReusableView {
     @IBOutlet weak var newBtn: UIButton!
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var songCountLabel: UILabel!
