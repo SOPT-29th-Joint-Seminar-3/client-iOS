@@ -44,6 +44,8 @@
 		BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */; };
 		BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */; };
 		BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */; };
+		BD1B0192274DD02500B4AB2A /* PlayStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */; };
+		BD1B0194274DD03000B4AB2A /* PlayStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */; };
 		BDCEF9C027469C450039877A /* MyMusicVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF9BF27469C450039877A /* MyMusicVC+Layout.swift */; };
 		BDCEF9C427469CAC0039877A /* MyMusicVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF9C327469CAC0039877A /* MyMusicVC+DataSource.swift */; };
 		BDCEF9C627469EE10039877A /* MyMusicSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF9C527469EE10039877A /* MyMusicSection.swift */; };
@@ -94,6 +96,8 @@
 		BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewSample.swift; sourceTree = "<group>"; };
 		BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMusicVC.storyboard; sourceTree = "<group>"; };
 		BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistDetailVC.storyboard; sourceTree = "<group>"; };
+		BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayStatusView.xib; sourceTree = "<group>"; };
+		BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStatusView.swift; sourceTree = "<group>"; };
 		BDCEF9BF27469C450039877A /* MyMusicVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyMusicVC+Layout.swift"; sourceTree = "<group>"; };
 		BDCEF9C327469CAC0039877A /* MyMusicVC+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyMusicVC+DataSource.swift"; sourceTree = "<group>"; };
 		BDCEF9C527469EE10039877A /* MyMusicSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicSection.swift; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 				2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */,
 				5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */,
 				5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */,
+				BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */,
+				BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				BD04198E273EDAE700347610 /* Main.storyboard in Resources */,
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
 				5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */,
+				BD1B0192274DD02500B4AB2A /* PlayStatusView.xib in Resources */,
 				2B009FE02743F51C009A5BBE /* AlbumCoverCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +437,7 @@
 				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
 				5CA13CF82747343A007FAFFF /* AlbumTrackCVC.swift in Sources */,
+				BD1B0194274DD03000B4AB2A /* PlayStatusView.swift in Sources */,
 				BD01C86927463CA1003619F9 /* PreparingVC.swift in Sources */,
 				2B009FDF2743F51C009A5BBE /* AlbumCoverCVC.swift in Sources */,
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,

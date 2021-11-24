@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -83,9 +82,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-KW-oTX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-KW-oTX" customClass="PlayStatusView" customModule="Client_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="725" width="375" height="53"/>
-                                <color key="backgroundColor" name="grey_2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="UaW-nn-DzB"/>
                                 </constraints>
@@ -138,9 +136,6 @@
     <resources>
         <image name="icn_profile" width="36" height="36"/>
         <image name="icn_voucher" width="36" height="20"/>
-        <namedColor name="grey_2">
-            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
