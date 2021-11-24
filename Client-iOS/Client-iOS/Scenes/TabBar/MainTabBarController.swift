@@ -28,7 +28,7 @@ class MainTabBarController: UITabBarController {
             PreparingVC(),
             PreparingVC(),
             PreparingVC(),
-            myMusicVC,
+            UINavigationController(rootViewController: myMusicVC),
             PreparingVC(),
         ]
         

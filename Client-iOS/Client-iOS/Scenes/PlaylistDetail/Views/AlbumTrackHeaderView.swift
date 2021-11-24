@@ -18,7 +18,7 @@ class AlbumTrackHeaderView: UICollectionReusableView {
     }
     
     func setUpUI() {
-        newBtn.layer.cornerRadius = newBtn.frame.height / 0.260869
-        imgBtn.layer.cornerRadius = imgBtn.frame.height / 0.260869
+        newBtn.layer.cornerRadius = newBtn.frame.height * 0.260869
+        imgBtn.layer.cornerRadius = imgBtn.frame.height * 0.260869
     }
 }
