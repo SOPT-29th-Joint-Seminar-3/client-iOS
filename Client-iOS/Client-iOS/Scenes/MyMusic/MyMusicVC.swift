@@ -53,6 +53,12 @@ final class MyMusicVC: BaseVC {
             UINib(nibName: MyPlayListCVC.ID,bundle: nil),
             forCellWithReuseIdentifier: MyPlayListCVC.ID
         )
+        
+        collectionView.register(
+            UINib(nibName: "MyPlayListFooterView", bundle: nil),
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+            withReuseIdentifier: "MyPlayListFooterView"
+        )
     }
 }
 
