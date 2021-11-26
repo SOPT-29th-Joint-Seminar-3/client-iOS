@@ -46,6 +46,8 @@
 		BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */; };
 		BD1B0192274DD02500B4AB2A /* PlayStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */; };
 		BD1B0194274DD03000B4AB2A /* PlayStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */; };
+		BD3B8F2B2750BE6000CA49B5 /* MyPlayListFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */; };
+		BD3B8F2D2750BE6D00CA49B5 /* MyPlayListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */; };
 		BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */; };
 		BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */; };
 		BDC831C9274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */; };
@@ -101,6 +103,8 @@
 		BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistDetailVC.storyboard; sourceTree = "<group>"; };
 		BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayStatusView.xib; sourceTree = "<group>"; };
 		BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStatusView.swift; sourceTree = "<group>"; };
+		BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListFooterView.xib; sourceTree = "<group>"; };
+		BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListFooterView.swift; sourceTree = "<group>"; };
 		BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+DataSource.swift"; sourceTree = "<group>"; };
 		BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailSection.swift; sourceTree = "<group>"; };
 		BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+Layout.swift"; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 				5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */,
 				BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */,
 				BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */,
+				BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */,
+				BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 				5CA13CF92747343A007FAFFF /* AlbumTrackCVC.xib in Resources */,
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
+				BD3B8F2B2750BE6000CA49B5 /* MyPlayListFooterView.xib in Resources */,
 				5C6D8768274101440033A2A4 /* MyPlayListCVC.xib in Resources */,
 				BDF8219F27401D1800394812 /* NotoSansKR-Medium.otf in Resources */,
 				BDF821992740178C00394812 /* Colors.xcassets in Resources */,
@@ -465,6 +472,7 @@
 				BD10D126273F96F800B395B4 /* MyMusicVC.swift in Sources */,
 				BDCEF9C027469C450039877A /* MyMusicVC+Layout.swift in Sources */,
 				BD10D137273F987200B395B4 /* MainTabBar.swift in Sources */,
+				BD3B8F2D2750BE6D00CA49B5 /* MyPlayListFooterView.swift in Sources */,
 				5CA13CF527469E2E007FAFFF /* AlbumTrackHeaderView.swift in Sources */,
 				BD01C867274637D2003619F9 /* BaseVC.swift in Sources */,
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,

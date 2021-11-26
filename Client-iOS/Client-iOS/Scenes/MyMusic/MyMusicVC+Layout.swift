@@ -32,6 +32,17 @@ extension MyMusicVC {
             alignment: .top)
     }
     
+    /// Playlist FooterView Layout
+    func supplementaryFooterItem() -> NSCollectionLayoutBoundarySupplementaryItem {
+        NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(68)
+            ),
+            elementKind: UICollectionView.elementKindSectionFooter,
+            alignment: .bottom)
+    }
+    
     /// QuickMenu Layout
     func quickMenuSectionLayout() -> NSCollectionLayoutSection {
         let item = NSCollectionLayoutItem(
@@ -72,7 +83,10 @@ extension MyMusicVC {
         )
 
         let section = NSCollectionLayoutSection(group: group)
-        section.boundarySupplementaryItems = [supplementaryHeaderItem()]
+        section.contentInsets = NSDirectionalEdgeInsets(
+            top: 0, leading: 0, bottom: -9, trailing: 0
+        )
+        section.boundarySupplementaryItems = [supplementaryHeaderItem(), supplementaryFooterItem()]
         return section
     }
 }
