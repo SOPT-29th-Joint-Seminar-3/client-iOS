@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -25,13 +25,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-FG-apS">
-                        <rect key="frame" x="83" y="16" width="34.5" height="20"/>
+                        <rect key="frame" x="83" y="16" width="34.666666666666657" height="20"/>
                         <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-jR-NCI">
-                        <rect key="frame" x="83" y="39" width="29.5" height="17"/>
+                        <rect key="frame" x="83" y="39" width="29.666666666666671" height="17"/>
                         <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="12"/>
                         <color key="textColor" name="grey_2"/>
                         <nil key="highlightedColor"/>
@@ -83,7 +83,7 @@
         <image name="icn_bigplay" width="24" height="24"/>
         <image name="icn_plus" width="24" height="24"/>
         <namedColor name="grey_2">
-            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

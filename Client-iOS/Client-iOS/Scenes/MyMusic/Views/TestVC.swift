@@ -62,9 +62,9 @@ extension TestVC: UICollectionViewDelegateFlowLayout {
 extension TestVC: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickMenuCV", for: indexPath) as? QuickMenuCV else {return UICollectionViewCell()}
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCoverCVC", for: indexPath) as? AlbumCoverCVC else {return UICollectionViewCell()}
-        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickMenuCV", for: indexPath) as? QuickMenuCV else {return UICollectionViewCell()}
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCoverCVC", for: indexPath) as? AlbumCoverCVC else {return UICollectionViewCell()}
+//
         return cell
     }
     

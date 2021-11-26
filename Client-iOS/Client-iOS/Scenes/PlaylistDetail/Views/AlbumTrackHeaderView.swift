@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AlbumTrackHeaderView: UIView {
+class AlbumTrackHeaderView: UICollectionReusableView {
     @IBOutlet weak var newBtn: UIButton!
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var songCountLabel: UILabel!
@@ -18,7 +18,7 @@ class AlbumTrackHeaderView: UIView {
     }
     
     func setUpUI() {
-        newBtn.layer.cornerRadius = newBtn.frame.height / 0.260869
-        imgBtn.layer.cornerRadius = imgBtn.frame.height / 0.260869
+        newBtn.layer.cornerRadius = newBtn.frame.height * 0.260869
+        imgBtn.layer.cornerRadius = imgBtn.frame.height * 0.260869
     }
 }

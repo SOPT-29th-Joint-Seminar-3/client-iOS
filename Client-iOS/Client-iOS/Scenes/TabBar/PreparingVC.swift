@@ -13,4 +13,16 @@ final class PreparingVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        alert()
+    }
+    
+    private func alert() {
+        let alertController = UIAlertController(title: "🙇🏻‍♂️ 준비중입니다.", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }
