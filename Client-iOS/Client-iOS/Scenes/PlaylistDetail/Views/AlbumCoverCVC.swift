@@ -24,5 +24,6 @@ class AlbumCoverCVC: UICollectionViewCell {
 
     @IBAction func touchUpBackButton(_ sender: Any) {
         /// pop
+        NotificationCenter.default.post(name: NSNotification.Name("pop"), object: nil)
     }
 }

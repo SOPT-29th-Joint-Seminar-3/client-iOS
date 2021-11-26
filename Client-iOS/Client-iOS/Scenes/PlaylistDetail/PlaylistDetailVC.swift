@@ -20,6 +20,7 @@ final class PlaylistDetailVC: BaseVC {
         setStyle()
         setCollectionView()
         registerNibs()
+        setNotification()
     }
     
     private func setStyle() {
@@ -46,5 +47,13 @@ final class PlaylistDetailVC: BaseVC {
             UINib(nibName: AlbumTrackCVC.ID,bundle: nil),
             forCellWithReuseIdentifier: AlbumTrackCVC.ID
         )
+    }
+    
+    private func setNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(pop), name: Notification.Name("pop"), object: nil)
+    }
+    
+    @objc func pop() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
