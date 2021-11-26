@@ -12,7 +12,8 @@
 <table>
   <tr>
     <td align="center">
-        <img src="https://user-images.githubusercontent.com/61109660/143596685-81cb273f-21e9-4512-92da-ab4f8936ecaa.png" width="300px;" alt=""/>
+        <img src="https://user-images.githubusercontent.com/61109660/143596685-81cb273f-21e9-4512-92da-ab4f8936ecaa.png" width="250px;" alt=""/>
+        <br />
         <b>김태현</b>
         <p>내음악뷰, 음악상세뷰</p>
         <li>Navigation(Top,Bottom)</li>
@@ -21,7 +22,8 @@
         <li>CollectionViewCell Expand</li>
     </td>
     <td align="center">
-        <img src="https://user-images.githubusercontent.com/61109660/143596334-40805592-285b-497a-994d-8f1233d714e5.png" width="300px;" alt=""/>
+        <img src="https://user-images.githubusercontent.com/61109660/143596334-40805592-285b-497a-994d-8f1233d714e5.png" width="250px;" alt=""/>
+        <br />
         <b>양수빈</b>
         <p>내음악뷰, 음악상세뷰</p>
         <li>QuickMenuCVC</li>
@@ -31,7 +33,8 @@
       <br />
     </td>
     <td align="center">
-        <img src="https://user-images.githubusercontent.com/61109660/143596363-73c5934d-bdb3-4bb1-a674-f87f293100d6.png" width="300px;" alt=""/>
+        <img src="https://user-images.githubusercontent.com/61109660/143596363-73c5934d-bdb3-4bb1-a674-f87f293100d6.png" width="250px;" alt=""/>
+        <br />
         <b>정정빈</b>
         <p>내음악뷰, 음악상세뷰</p>
         <li>PlayListHeaderView</li>
