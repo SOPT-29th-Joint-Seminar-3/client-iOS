@@ -8,5 +8,4 @@
 enum MyMusicSection: Int, CaseIterable {
     case quickMenu
     case myPlayList
-    case playStatus
 }

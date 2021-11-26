@@ -9,14 +9,13 @@ import UIKit
 
 final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        3
+        2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch MyMusicSection.allCases[section] {
         case .quickMenu:    return 1
         case .myPlayList:   return 10
-        default:            return 0
         }
     }
     
@@ -30,13 +29,10 @@ final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
             let data = dummyMyPlayListData()
             cell.setData(data: data[indexPath.row])
             return cell
-        default:
-            return UICollectionViewCell()
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
         switch MyMusicSection.allCases[indexPath.section] {
         case .myPlayList:
             guard let view = collectionView.dequeueReusableSupplementaryView(

@@ -10,18 +10,23 @@ import UIKit
 final class MyMusicVC: BaseVC {
     
     // MARK: - IBOutlets
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
+    
     private let dataSource = MyMusicVCDataSource()
     
     // MARK: - Life cycles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setStyle()
         setCollectionView()
         registerNibs()
     }
+    
+    // MARK: - Setup
     
     private func setStyle() {
         navigationController?.navigationBar.isHidden = true
@@ -51,9 +56,9 @@ final class MyMusicVC: BaseVC {
     }
 }
 
+// MARK: - CollectionView Delegate
 extension MyMusicVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         switch MyMusicSection.allCases[indexPath.section] {
         case .myPlayList:
             let vc = UIStoryboard(name: "PlaylistDetailVC", bundle: nil)
@@ -62,6 +67,5 @@ extension MyMusicVC: UICollectionViewDelegate {
         default:
             return
         }
-
     }
 }
