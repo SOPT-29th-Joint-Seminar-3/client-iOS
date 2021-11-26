@@ -1,9 +1,54 @@
 # client-iOS
-`아자아자!`
-
-testing device: iPhone 13 mini
+> 문득 그런 생각이 들었다... 아요 3조는 최고가 아닐까? `아자아자!`
 
 <br />
+
+### 개발 환경
+- `iOS 13.0 +` · `Swift 5.5` · `Xcode 13.0` · `iPhone 13 mini`
+
+<br />
+
+### 역할 분배
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://user-images.githubusercontent.com/61109660/143596685-81cb273f-21e9-4512-92da-ab4f8936ecaa.png" width="300px;" alt=""/>
+        <b>김태현</b>
+        <p>내음악뷰, 음악상세뷰</p>
+        <li>Navigation(Top,Bottom)</li>
+        <li>Play Status Bar</li>
+        <li>CollectionView Setting</li>
+        <li>CollectionViewCell Expand</li>
+    </td>
+    <td align="center">
+        <img src="https://user-images.githubusercontent.com/61109660/143596334-40805592-285b-497a-994d-8f1233d714e5.png" width="300px;" alt=""/>
+        <b>양수빈</b>
+        <p>내음악뷰, 음악상세뷰</p>
+        <li>QuickMenuCVC</li>
+        <li>AlbumCoverCVC</li>
+        <li>DummyData</li>
+        <li>CollectionView Test</li>
+      <br />
+    </td>
+    <td align="center">
+        <img src="https://user-images.githubusercontent.com/61109660/143596363-73c5934d-bdb3-4bb1-a674-f87f293100d6.png" width="300px;" alt=""/>
+        <b>정정빈</b>
+        <p>내음악뷰, 음악상세뷰</p>
+        <li>PlayListHeaderView</li>
+        <li>AlbumTrackHeaderView</li>
+        <li>AlbumTrackCVC</li>
+        <li>DummyData</li>
+      <br />
+    </td>
+  </tr>
+</table>
+
+
+
+<br />
+
+### 폴더링 및 컨벤션
+> 🙋🏻‍♂️ Git 전략(Branch 및 Flow), 컨벤션(코드, 커밋), 폴더링, 협업 룰, 자체 룰에 관한 내용이 기술되어있습니다.
 
 ![Banner](https://user-images.githubusercontent.com/61109660/141601921-14561af1-56e5-4af7-9d3e-9dd2266602b1.png)
 ![Git Branch   Git Flow (1)](https://user-images.githubusercontent.com/61109660/141601906-db246d11-2c5a-4172-b7a3-b21f717b05fd.png)
