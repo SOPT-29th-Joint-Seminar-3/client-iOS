@@ -22,6 +22,9 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="btn_unfold"/>
+                    <connections>
+                        <action selector="toggleButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="27q-cc-UFL"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
