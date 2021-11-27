@@ -138,6 +138,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C065D84275266B60080F72E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		BBE43E5C5E0B2323A9DBADA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +183,7 @@
 		BD041985273EDAE700347610 /* Client-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5C065D84275266B60080F72E /* Network */,
 				BD04199A273EDB5A00347610 /* Resources */,
 				BD10D128273F973B00B395B4 /* Common */,
 				BD04199B273EDB8900347610 /* Extensions */,
