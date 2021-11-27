@@ -11,4 +11,13 @@ struct APIConstants {
     
     // MARK: Feature URL
     static let getMyPlayListURL = baseURL + "/user/"
+    static let addNewPlayListURL = baseURL + "/playlist"
+    
+    static func getMyPlayListDetailURL(id: String) -> String {
+        return baseURL + "/playlist/\(id)"
+    }
+    
+    static func likeMyPlayListURL(id: String) -> String {
+        return baseURL + "/playlist/\(id)/like"
+    }
 }
