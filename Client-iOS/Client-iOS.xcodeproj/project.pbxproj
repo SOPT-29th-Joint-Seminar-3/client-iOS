@@ -16,6 +16,7 @@
 		2B45DB342742305300C90091 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB332742305300C90091 /* TestVC.swift */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
 		5C065D86275266E90080F72E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D85275266E90080F72E /* APIConstants.swift */; };
+		5C065D88275267480080F72E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D87275267480080F72E /* NetworkResult.swift */; };
 		5C6D8768274101440033A2A4 /* MyPlayListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
@@ -71,6 +72,7 @@
 		2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCVC.xib; sourceTree = "<group>"; };
 		2B45DB332742305300C90091 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5C065D87275267480080F72E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListCVC.xib; sourceTree = "<group>"; };
 		5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListCVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5C065D85275266E90080F72E /* APIConstants.swift */,
+				5C065D87275267480080F72E /* NetworkResult.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				BDCEF9C427469CAC0039877A /* MyMusicVC+DataSource.swift in Sources */,
 				BD04199D273EDBA000347610 /* Extension+.swift in Sources */,
 				2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */,
+				5C065D88275267480080F72E /* NetworkResult.swift in Sources */,
 				2B45DB342742305300C90091 /* TestVC.swift in Sources */,
 				5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */,
 				BD10D12A273F975A00B395B4 /* Color.swift in Sources */,
