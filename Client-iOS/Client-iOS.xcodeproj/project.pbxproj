@@ -15,6 +15,8 @@
 		2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */; };
 		2B45DB342742305300C90091 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB332742305300C90091 /* TestVC.swift */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
+		5C065D86275266E90080F72E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D85275266E90080F72E /* APIConstants.swift */; };
+		5C065D88275267480080F72E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D87275267480080F72E /* NetworkResult.swift */; };
 		5C6D8768274101440033A2A4 /* MyPlayListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */; };
 		5C6D876A274101DB0033A2A4 /* MyPlayListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */; };
 		5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */; };
@@ -69,6 +71,8 @@
 		2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCVC.swift; sourceTree = "<group>"; };
 		2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCVC.xib; sourceTree = "<group>"; };
 		2B45DB332742305300C90091 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5C065D87275267480080F72E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListCVC.xib; sourceTree = "<group>"; };
 		5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListCVC.swift; sourceTree = "<group>"; };
 		5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListForm.swift; sourceTree = "<group>"; };
@@ -138,6 +142,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C065D84275266B60080F72E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5C065D85275266E90080F72E /* APIConstants.swift */,
+				5C065D87275267480080F72E /* NetworkResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		BBE43E5C5E0B2323A9DBADA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +189,7 @@
 		BD041985273EDAE700347610 /* Client-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5C065D84275266B60080F72E /* Network */,
 				BD04199A273EDB5A00347610 /* Resources */,
 				BD10D128273F973B00B395B4 /* Common */,
 				BD04199B273EDB8900347610 /* Extensions */,
@@ -464,6 +478,7 @@
 				BDCEF9C427469CAC0039877A /* MyMusicVC+DataSource.swift in Sources */,
 				BD04199D273EDBA000347610 /* Extension+.swift in Sources */,
 				2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */,
+				5C065D88275267480080F72E /* NetworkResult.swift in Sources */,
 				2B45DB342742305300C90091 /* TestVC.swift in Sources */,
 				5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */,
 				BD10D12A273F975A00B395B4 /* Color.swift in Sources */,
@@ -472,6 +487,7 @@
 				BD10D126273F96F800B395B4 /* MyMusicVC.swift in Sources */,
 				BDCEF9C027469C450039877A /* MyMusicVC+Layout.swift in Sources */,
 				BD10D137273F987200B395B4 /* MainTabBar.swift in Sources */,
+				5C065D86275266E90080F72E /* APIConstants.swift in Sources */,
 				BD3B8F2D2750BE6D00CA49B5 /* MyPlayListFooterView.swift in Sources */,
 				5CA13CF527469E2E007FAFFF /* AlbumTrackHeaderView.swift in Sources */,
 				BD01C867274637D2003619F9 /* BaseVC.swift in Sources */,
