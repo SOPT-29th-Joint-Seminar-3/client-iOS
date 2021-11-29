@@ -12,7 +12,7 @@ struct PlaylistDetailModel: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: PlaylistDetailData
+    let data: PlaylistDetailData?
 }
 
 // MARK: - PlaylistDetailData
