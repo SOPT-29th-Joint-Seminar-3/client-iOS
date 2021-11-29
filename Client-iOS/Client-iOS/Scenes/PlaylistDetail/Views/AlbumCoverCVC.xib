@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -206,12 +206,13 @@
             <size key="customSize" width="229" height="202"/>
             <connections>
                 <outlet property="centerImageView" destination="Lez-zf-hAt" id="Ixr-jr-Bww"/>
-                <outlet property="dateLabel" destination="DUE-fu-9HC" id="oba-Dq-5cV"/>
+                <outlet property="descriptionLabel" destination="1CB-Rr-iqL" id="0Vd-Xf-6CF"/>
                 <outlet property="leftSecondImageView" destination="u2t-bf-KaR" id="rOW-iC-8PD"/>
                 <outlet property="leftThirdImageView" destination="ERg-RJ-Dxa" id="G1c-3P-7XL"/>
                 <outlet property="playButton" destination="tSK-m4-cfk" id="ato-Za-nbW"/>
                 <outlet property="rightSecondImageView" destination="z9i-g2-BaZ" id="vIX-A7-gCC"/>
                 <outlet property="rightThirdImageView" destination="FjO-Pf-84p" id="7fV-SW-oSs"/>
+                <outlet property="titleLabel" destination="DUE-fu-9HC" id="oba-Dq-5cV"/>
             </connections>
             <point key="canvasLocation" x="267.39130434782612" y="196.875"/>
         </collectionViewCell>

@@ -14,7 +14,8 @@ class AlbumCoverCVC: UICollectionViewCell {
     @IBOutlet weak var rightThirdImageView: UIImageView!
     @IBOutlet weak var leftSecondImageView: UIImageView!
     @IBOutlet weak var leftThirdImageView: UIImageView!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
     override func awakeFromNib() {
