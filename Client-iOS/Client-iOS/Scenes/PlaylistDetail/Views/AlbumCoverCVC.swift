@@ -30,6 +30,11 @@ class AlbumCoverCVC: UICollectionViewCell {
         descriptionLabel.text = ""
         arrowButton.alpha = 0
     }
+    
+    func setData(data: PlaylistDetailData) {
+        titleLabel.text = data.title
+        descriptionLabel.text = data.dataDescription
+    }
 
     @IBAction func touchUpBackButton(_ sender: Any) {
         /// pop

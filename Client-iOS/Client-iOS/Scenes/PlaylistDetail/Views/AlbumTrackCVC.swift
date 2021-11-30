@@ -19,9 +19,14 @@ class AlbumTrackCVC: UICollectionViewCell {
         albumImageView.layer.cornerRadius = albumImageView.frame.height * 0.106382
     }
     
-    func setData(data: AlbumTrackListForm) {
-        albumImageView.image = data.albumImage
-        songTitleLabel.text = data.songTitle
-        artistLabel.text = data.artist
+    func setData(data: Song) {
+        songTitleLabel.text = data.name
+        artistLabel.text = data.singer
     }
+    
+//    func setData(data: AlbumTrackListForm) {
+//        albumImageView.image = data.albumImage
+//        songTitleLabel.text = data.songTitle
+//        artistLabel.text = data.artist
+//    }
 }

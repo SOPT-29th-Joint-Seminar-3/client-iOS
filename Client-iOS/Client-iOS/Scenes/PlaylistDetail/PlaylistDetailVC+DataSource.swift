@@ -17,8 +17,8 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch PlaylistDetailSection.allCases[section] {
-        case .albumCover:   return data == nil ? 0 : 1
-        case .albumTrack:   return 5
+        case .albumCover:   return 1
+        case .albumTrack:   return data?.songs.count ?? 0
         }
     }
     
@@ -26,19 +26,18 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
         switch PlaylistDetailSection.allCases[indexPath.section] {
         case .albumCover:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCoverCVC", for: indexPath) as? AlbumCoverCVC else { return UICollectionViewCell() }
-            print("-----data: \(data)")
             if let albumCoverData = data {
-                cell.titleLabel.text = albumCoverData.title
-                cell.descriptionLabel.text = albumCoverData.dataDescription
+                cell.setData(data: albumCoverData)
+                cell.arrowButton.alpha = 1.0
             }
             return cell
             
         case .albumTrack:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumTrackCVC.ID, for: indexPath) as! AlbumTrackCVC
-            /// 데이터 넣어줘야됨
-            let data = dummyAlbumTrackListData()
-            
-            cell.setData(data: data[indexPath.row])
+            if let albumTrackData = data?.songs {
+                cell.albumImageView.image = UIImage(named: "cover_\(indexPath.row+1)")
+                cell.setData(data: albumTrackData[indexPath.row])
+            }
             return cell
         }
     }
@@ -54,6 +53,9 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
             ) as? AlbumTrackHeaderView else {
                 return UICollectionReusableView()
             }
+            
+            view.songCountLabel.text = "\(data?.total ?? 0)"
+            
             return view
         default: return UICollectionReusableView()
         }

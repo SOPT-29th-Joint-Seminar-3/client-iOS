@@ -10,7 +10,6 @@ import UIKit
 final class PlaylistDetailVC: BaseVC {
     
     @IBOutlet weak var collectionView: UICollectionView!
-//    var data = [PlaylistDetailModel]()
     
     // MARK: - Properties
     private let dataSource = PlaylistDetailVCDataSource()
@@ -20,20 +19,9 @@ final class PlaylistDetailVC: BaseVC {
         super.viewDidLoad()
         fetchPlaylistDetail()
         setStyle()
-//        setCollectionView()
-//        registerNibs()
-        setNotification()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        getPlaylistDetail()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        registerNibs()
         setCollectionView()
+        registerNibs()
+        setNotification()
     }
     
     private func setStyle() {
@@ -71,10 +59,8 @@ final class PlaylistDetailVC: BaseVC {
             switch responseData {
             case .success(let listResponse):
                 guard let response = listResponse as? PlaylistDetailModel else { return }
-                if let fullData = response.data {
-                    print("--------")
-                    print("fullData: \(fullData)")
-                    self.dataSource.data = fullData
+                if let totalData = response.data {
+                    self.dataSource.data = totalData
                     self.collectionView.reloadData()
                 }
 
