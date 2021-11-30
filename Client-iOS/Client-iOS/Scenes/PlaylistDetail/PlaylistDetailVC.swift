@@ -10,6 +10,7 @@ import UIKit
 final class PlaylistDetailVC: BaseVC {
     
     @IBOutlet weak var collectionView: UICollectionView!
+//    var data = [PlaylistDetailModel]()
     
     // MARK: - Properties
     private let dataSource = PlaylistDetailVCDataSource()
@@ -17,10 +18,22 @@ final class PlaylistDetailVC: BaseVC {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchPlaylistDetail()
         setStyle()
-        setCollectionView()
-        registerNibs()
+//        setCollectionView()
+//        registerNibs()
         setNotification()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        getPlaylistDetail()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        registerNibs()
+        setCollectionView()
     }
     
     private func setStyle() {
@@ -51,6 +64,30 @@ final class PlaylistDetailVC: BaseVC {
     
     private func setNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(pop), name: Notification.Name("pop"), object: nil)
+    }
+    
+    func fetchPlaylistDetail() {
+        PlaylistDetailService.shared.getPlaylistDetail(userId: 1) { responseData in
+            switch responseData {
+            case .success(let listResponse):
+                guard let response = listResponse as? PlaylistDetailModel else { return }
+                if let fullData = response.data {
+                    print("--------")
+                    print("fullData: \(fullData)")
+                    self.dataSource.data = fullData
+                    self.collectionView.reloadData()
+                }
+
+            case .requestErr(let msg):
+                print("requestErr \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
     
     @objc func pop() {

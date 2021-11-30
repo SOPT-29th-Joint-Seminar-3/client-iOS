@@ -8,13 +8,16 @@
 import UIKit
 
 final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
+    
+    var data : PlaylistDetailData?
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch PlaylistDetailSection.allCases[section] {
-        case .albumCover:    return 1
+        case .albumCover:   return data == nil ? 0 : 1
         case .albumTrack:   return 5
         }
     }
@@ -23,10 +26,18 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
         switch PlaylistDetailSection.allCases[indexPath.section] {
         case .albumCover:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCoverCVC", for: indexPath) as? AlbumCoverCVC else { return UICollectionViewCell() }
+            print("-----data: \(data)")
+            if let albumCoverData = data {
+                cell.titleLabel.text = albumCoverData.title
+                cell.descriptionLabel.text = albumCoverData.dataDescription
+            }
             return cell
+            
         case .albumTrack:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumTrackCVC.ID, for: indexPath) as! AlbumTrackCVC
+            /// 데이터 넣어줘야됨
             let data = dummyAlbumTrackListData()
+            
             cell.setData(data: data[indexPath.row])
             return cell
         }
