@@ -17,10 +17,18 @@ class AlbumCoverCVC: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var arrowButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configUI()
+    }
+    
+    private func configUI() {
+        titleLabel.text = ""
+        descriptionLabel.text = ""
+        arrowButton.alpha = 0
     }
 
     @IBAction func touchUpBackButton(_ sender: Any) {
