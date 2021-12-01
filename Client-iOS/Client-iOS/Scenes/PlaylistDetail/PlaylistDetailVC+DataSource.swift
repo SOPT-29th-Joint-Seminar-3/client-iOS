@@ -8,14 +8,16 @@
 import UIKit
 
 final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
+    var data : PlaylistDetailData?
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch PlaylistDetailSection.allCases[section] {
-        case .albumCover:    return 1
-        case .albumTrack:   return 5
+        case .albumCover:   return 1
+        case .albumTrack:   return data?.songs.count ?? 0
         }
     }
     
@@ -23,11 +25,18 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
         switch PlaylistDetailSection.allCases[indexPath.section] {
         case .albumCover:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCoverCVC", for: indexPath) as? AlbumCoverCVC else { return UICollectionViewCell() }
+            if let albumCoverData = data {
+                cell.setData(data: albumCoverData)
+                cell.arrowButton.alpha = 1.0
+            }
             return cell
+            
         case .albumTrack:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumTrackCVC.ID, for: indexPath) as! AlbumTrackCVC
-            let data = dummyAlbumTrackListData()
-            cell.setData(data: data[indexPath.row])
+            if let albumTrackData = data?.songs {
+                cell.albumImageView.image = UIImage(named: "cover_\(indexPath.row+1)")
+                cell.setData(data: albumTrackData[indexPath.row])
+            }
             return cell
         }
     }
@@ -43,6 +52,9 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
             ) as? AlbumTrackHeaderView else {
                 return UICollectionReusableView()
             }
+            
+            view.songCountLabel.text = "\(data?.total ?? 0)"
+            
             return view
         default: return UICollectionReusableView()
         }

@@ -17,6 +17,7 @@ final class PlaylistDetailVC: BaseVC {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchPlaylistDetail()
         setStyle()
         setCollectionView()
         registerNibs()
@@ -51,6 +52,27 @@ final class PlaylistDetailVC: BaseVC {
     
     private func setNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(pop), name: Notification.Name("pop"), object: nil)
+    }
+    
+    func fetchPlaylistDetail() {
+        PlaylistDetailService.shared.getPlaylistDetail(userId: 1) { responseData in
+            switch responseData {
+            case .success(let listResponse):
+                guard let response = listResponse as? PlaylistDetailModel else { return }
+                if let totalData = response.data {
+                    self.dataSource.data = totalData
+                    self.collectionView.reloadData()
+                }
+            case .requestErr(let msg):
+                print("requestErr \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
     
     @objc func pop() {

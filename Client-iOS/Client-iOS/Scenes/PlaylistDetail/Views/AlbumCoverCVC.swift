@@ -14,12 +14,26 @@ class AlbumCoverCVC: UICollectionViewCell {
     @IBOutlet weak var rightThirdImageView: UIImageView!
     @IBOutlet weak var leftSecondImageView: UIImageView!
     @IBOutlet weak var leftThirdImageView: UIImageView!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var arrowButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configUI()
+    }
+    
+    private func configUI() {
+        titleLabel.text = ""
+        descriptionLabel.text = ""
+        arrowButton.alpha = 0
+    }
+    
+    func setData(data: PlaylistDetailData) {
+        titleLabel.text = data.title
+        descriptionLabel.text = data.dataDescription
     }
 
     @IBAction func touchUpBackButton(_ sender: Any) {
