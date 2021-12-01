@@ -63,7 +63,6 @@ final class PlaylistDetailVC: BaseVC {
                     self.dataSource.data = totalData
                     self.collectionView.reloadData()
                 }
-
             case .requestErr(let msg):
                 print("requestErr \(msg)")
             case .pathErr:

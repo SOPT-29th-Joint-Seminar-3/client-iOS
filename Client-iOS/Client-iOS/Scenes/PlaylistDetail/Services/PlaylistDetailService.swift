@@ -49,5 +49,4 @@ struct PlaylistDetailService {
         guard let decodedData = try? decoder.decode(PlaylistDetailModel.self, from: data) else {return .pathErr}
         return .success(decodedData)
     }
-    
 }

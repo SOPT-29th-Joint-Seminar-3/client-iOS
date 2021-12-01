@@ -8,7 +8,6 @@
 import UIKit
 
 final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
-    
     var data : PlaylistDetailData?
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
