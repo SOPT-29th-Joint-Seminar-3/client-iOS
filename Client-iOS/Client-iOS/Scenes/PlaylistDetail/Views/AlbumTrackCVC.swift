@@ -23,10 +23,4 @@ class AlbumTrackCVC: UICollectionViewCell {
         songTitleLabel.text = data.name
         artistLabel.text = data.singer
     }
-    
-//    func setData(data: AlbumTrackListForm) {
-//        albumImageView.image = data.albumImage
-//        songTitleLabel.text = data.songTitle
-//        artistLabel.text = data.artist
-//    }
 }
