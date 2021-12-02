@@ -53,6 +53,10 @@
 		BD1B0194274DD03000B4AB2A /* PlayStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */; };
 		BD3B8F2B2750BE6000CA49B5 /* MyPlayListFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */; };
 		BD3B8F2D2750BE6D00CA49B5 /* MyPlayListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */; };
+		BD51477427590A3D00C652D8 /* PlaylistPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD51477327590A3D00C652D8 /* PlaylistPopUpView.xib */; };
+		BD51477627590A4E00C652D8 /* PlaylistPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51477527590A4E00C652D8 /* PlaylistPopUpView.swift */; };
+		BD514778275912B800C652D8 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD514777275912B800C652D8 /* UIApplication+.swift */; };
+		BD51477A275919A300C652D8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD514779275919A300C652D8 /* UIView+.swift */; };
 		BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */; };
 		BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */; };
 		BDC831C9274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */; };
@@ -115,6 +119,10 @@
 		BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStatusView.swift; sourceTree = "<group>"; };
 		BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListFooterView.xib; sourceTree = "<group>"; };
 		BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayListFooterView.swift; sourceTree = "<group>"; };
+		BD51477327590A3D00C652D8 /* PlaylistPopUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistPopUpView.xib; sourceTree = "<group>"; };
+		BD51477527590A4E00C652D8 /* PlaylistPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPopUpView.swift; sourceTree = "<group>"; };
+		BD514777275912B800C652D8 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		BD514779275919A300C652D8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+DataSource.swift"; sourceTree = "<group>"; };
 		BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailSection.swift; sourceTree = "<group>"; };
 		BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+Layout.swift"; sourceTree = "<group>"; };
@@ -246,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				BD04199C273EDBA000347610 /* Extension+.swift */,
+				BD514777275912B800C652D8 /* UIApplication+.swift */,
+				BD514779275919A300C652D8 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +338,8 @@
 				BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */,
 				BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */,
 				BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */,
+				BD51477327590A3D00C652D8 /* PlaylistPopUpView.xib */,
+				BD51477527590A4E00C652D8 /* PlaylistPopUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -436,6 +448,7 @@
 				BD041990273EDAE800347610 /* Assets.xcassets in Resources */,
 				BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */,
 				BD3B8F2B2750BE6000CA49B5 /* MyPlayListFooterView.xib in Resources */,
+				BD51477427590A3D00C652D8 /* PlaylistPopUpView.xib in Resources */,
 				5C6D8768274101440033A2A4 /* MyPlayListCVC.xib in Resources */,
 				BDF8219F27401D1800394812 /* NotoSansKR-Medium.otf in Resources */,
 				BDF821992740178C00394812 /* Colors.xcassets in Resources */,
@@ -498,7 +511,9 @@
 			files = (
 				BD10D12E273F977200B395B4 /* Image.swift in Sources */,
 				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
+				BD514778275912B800C652D8 /* UIApplication+.swift in Sources */,
 				BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */,
+				BD51477A275919A300C652D8 /* UIView+.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
 				2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */,
 				2B5AD15927554AD800A5D9B2 /* PlaylistDetailModel.swift in Sources */,
@@ -519,6 +534,7 @@
 				5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */,
 				BD10D12A273F975A00B395B4 /* Color.swift in Sources */,
 				BD10D12C273F976700B395B4 /* Typography.swift in Sources */,
+				BD51477627590A4E00C652D8 /* PlaylistPopUpView.swift in Sources */,
 				BDCEF9C627469EE10039877A /* MyMusicSection.swift in Sources */,
 				BD10D126273F96F800B395B4 /* MyMusicVC.swift in Sources */,
 				BDCEF9C027469C450039877A /* MyMusicVC+Layout.swift in Sources */,
