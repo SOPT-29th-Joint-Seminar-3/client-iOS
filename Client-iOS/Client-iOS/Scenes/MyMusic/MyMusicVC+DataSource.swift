@@ -10,7 +10,7 @@ import UIKit
 final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
     // 데이터 가변적으로 보여주기 위한 변수
     var dataCount = 5
-    
+    var countList = [0, 0, 1, 0]
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         2
     }
@@ -26,11 +26,13 @@ final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
         switch MyMusicSection.allCases[indexPath.section] {
         case .quickMenu:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickMenuCV", for: indexPath) as! QuickMenuCV
+            cell.countList = countList
+            cell.quickMenuCollectionView.reloadData()
             return cell
         case .myPlayList:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPlayListCVC.ID, for: indexPath) as! MyPlayListCVC
-            let data = dummyMyPlayListData()
-            cell.setData(data: data[indexPath.row])
+//            let data = dummyMyPlayListData()
+//            cell.setData(data: data[indexPath.row])
             return cell
         }
     }

@@ -66,13 +66,20 @@ final class MyMusicVC: BaseVC {
         )
     }
     
-    // MARK: fetchMyMusicData()
+    // MARK: - Custom Method
+    
     private func fetchMyMusicData() {
         getMyMusicService.requestGetMyMusic(id: "1") { responseData in
             switch responseData {
             case .success(let myMusicResponse):
                 guard let response = myMusicResponse as? GetMyMusicResponseData else { return }
-                print("response data: \(response)")
+                self.dataSource.countList = [
+                    response.data?.likeCount ?? 0,
+                    response.data?.saveCount ?? 0,
+                    response.data?.recentPlayedCount ?? 0,
+                    response.data?.mostPlayedCount ?? 0
+                ]
+                self.collectionView.reloadData()
             default:
                 print("데이터 불러오기 실패")
             }

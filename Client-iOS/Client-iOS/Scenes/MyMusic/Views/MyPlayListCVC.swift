@@ -18,9 +18,9 @@ class MyPlayListCVC: UICollectionViewCell {
     @IBOutlet weak var albumTitleLabel: UILabel!
     @IBOutlet weak var albumCountLabel: UILabel!
     
-    func setData(data: MyPlayListForm) {
-        albumImageView.image = data.albumImage
-        albumTitleLabel.text = data.albumTitle
-        albumCountLabel.text = "\(data.albumCount)곡"
-    }
+//    func setData(data: MyPlayListForm) {
+//        albumImageView.image = data.albumImage
+//        albumTitleLabel.text = data.albumTitle
+//        albumCountLabel.text = "\(data.albumCount)곡"
+//    }
 }

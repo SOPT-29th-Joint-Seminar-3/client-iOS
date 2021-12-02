@@ -12,7 +12,7 @@ class QuickMenuCV: UICollectionViewCell {
     // MARK: - Dummy Data
     private var categoryList = ["내가 좋아한", "내가 보관한", "최근 재생한", "많이 재생한"]
     private var iconList = ["icn_heart", "icn_keep", "icn_time", "icn_play"]
-    private var countList = [55, 2, 127, 87]
+    var countList = [0, 0, 0, 0]
     private var coverList = ["quickMenuCover_1", "quickMenuCover_2", "quickMenuCover_3", "quickMenuCover_4"]
     
     @IBOutlet weak var quickMenuCollectionView: UICollectionView!
