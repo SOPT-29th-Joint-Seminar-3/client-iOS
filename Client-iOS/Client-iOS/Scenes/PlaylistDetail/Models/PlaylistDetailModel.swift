@@ -19,8 +19,8 @@ struct PlaylistDetailModel: Codable {
 struct PlaylistDetailData: Codable {
     let id: Int
     let title, dataDescription: String
-    let total: Int
-    let songs: [Song]
+    let total: Int?
+    let songs: [Song]?
 
     enum CodingKeys: String, CodingKey {
         case id, title
