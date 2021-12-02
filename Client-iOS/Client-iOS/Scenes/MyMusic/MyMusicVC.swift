@@ -5,6 +5,7 @@
 //  Created by taehy.k on 2021/11/13.
 //
 
+import Foundation
 import UIKit
 
 final class MyMusicVC: BaseVC {
@@ -16,8 +17,13 @@ final class MyMusicVC: BaseVC {
     // MARK: - Properties
     
     private let dataSource = MyMusicVCDataSource()
+    private let getMyMusicService = GetMyMusicService.shared
     
     // MARK: - Life cycles
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchMyMusicData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +65,29 @@ final class MyMusicVC: BaseVC {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
             withReuseIdentifier: "MyPlayListFooterView"
         )
+    }
+    
+    // MARK: - Custom Method
+    
+    private func fetchMyMusicData() {
+        getMyMusicService.requestGetMyMusic(id: "1") { [weak self] responseData in
+            switch responseData {
+            case .success(let myMusicResponse):
+                guard let response = myMusicResponse as? GetMyMusicResultData else { return }
+                self?.dataSource.countList = [
+                    response.likeCount,
+                    response.saveCount,
+                    response.recentPlayedCount,
+                    response.mostPlayedCount
+                ]
+                self?.dataSource.myPlayList = response.likes
+                self?.dataSource.dataCount = response.likes.count / 2
+                self?.collectionView.reloadData()
+
+            default:
+                print("데이터 불러오기 실패")
+            }
+        }
     }
 }
 
