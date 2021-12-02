@@ -21,4 +21,12 @@ class MyPlayListHeaderView: UICollectionReusableView {
         newBtn.layer.cornerRadius = newBtn.frame.height * 0.260869
         imgBtn.layer.cornerRadius = imgBtn.frame.height * 0.260869
     }
+    
+    @IBAction func addNewPlaylistBtnTapped(_ sender: Any) {
+        PlaylistPopUpView
+            .loadFromXib()
+            .present {
+                print("플레이리스트 생성 요청")
+            }
+    }
 }
