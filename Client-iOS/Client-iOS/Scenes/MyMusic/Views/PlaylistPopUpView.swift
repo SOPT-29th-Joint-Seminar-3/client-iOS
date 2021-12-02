@@ -15,7 +15,7 @@ final class PlaylistPopUpView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    private var eventHandler: (() -> Void)?
+    private var eventHandler: ((String) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,11 +43,11 @@ final class PlaylistPopUpView: UIView {
      }
     
     @IBAction func confirmBtnTapped(_ sender: Any) {
-        eventHandler?()
+        eventHandler?(textField.text ?? "플레이리스트 기본 설정 이름")
         moveOut()
     }
 
-    public func present(_ eventHandler: @escaping (() -> Void)) {
+    public func present(_ eventHandler: @escaping ((String) -> Void)) {
         self.eventHandler = eventHandler
         DispatchQueue.main.async {
             self.frame = UIScreen.main.bounds

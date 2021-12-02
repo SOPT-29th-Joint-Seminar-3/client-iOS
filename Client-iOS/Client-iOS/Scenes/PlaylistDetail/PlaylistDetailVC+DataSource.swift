@@ -17,7 +17,7 @@ final class PlaylistDetailVCDataSource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch PlaylistDetailSection.allCases[section] {
         case .albumCover:   return 1
-        case .albumTrack:   return data?.songs.count ?? 0
+        case .albumTrack:   return data?.songs?.count ?? 0
         }
     }
     
