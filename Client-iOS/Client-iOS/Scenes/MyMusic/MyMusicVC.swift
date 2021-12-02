@@ -79,7 +79,10 @@ final class MyMusicVC: BaseVC {
                     response.data?.recentPlayedCount ?? 0,
                     response.data?.mostPlayedCount ?? 0
                 ]
+                self.dataSource.myPlayList = response.data?.likes ?? [MyPlayListData]()
+                self.dataSource.dataCount = (response.data?.likes.count ?? 0) / 2
                 self.collectionView.reloadData()
+
             default:
                 print("데이터 불러오기 실패")
             }

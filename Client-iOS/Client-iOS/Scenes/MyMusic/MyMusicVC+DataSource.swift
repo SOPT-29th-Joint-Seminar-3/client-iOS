@@ -5,6 +5,7 @@
 //  Created by taehy.k on 2021/11/18.
 //
 
+import Foundation
 import UIKit
 
 final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
@@ -65,9 +66,9 @@ final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
                 view.action = { [weak self] (state: ToggleState) in
                     switch state {
                     case .fold:
-                        self?.dataCount = 10
+                        self?.dataCount = self?.myPlayList.count ?? 0
                     case .unfold:
-                        self?.dataCount = 5
+                        self?.dataCount = (self?.myPlayList.count ?? 0) / 2
                     }
                     collectionView.reloadData()
                 }
