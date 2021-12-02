@@ -16,8 +16,13 @@ final class MyMusicVC: BaseVC {
     // MARK: - Properties
     
     private let dataSource = MyMusicVCDataSource()
+    let getMyMusicService = GetMyMusicService.shared
     
     // MARK: - Life cycles
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchMyMusicData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +64,19 @@ final class MyMusicVC: BaseVC {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
             withReuseIdentifier: "MyPlayListFooterView"
         )
+    }
+    
+    // MARK: fetchMyMusicData()
+    private func fetchMyMusicData() {
+        getMyMusicService.requestGetMyMusic(id: "1") { responseData in
+            switch responseData {
+            case .success(let myMusicResponse):
+                guard let response = myMusicResponse as? GetMyMusicResponseData else { return }
+                print("response data: \(response)")
+            default:
+                print("데이터 불러오기 실패")
+            }
+        }
     }
 }
 
