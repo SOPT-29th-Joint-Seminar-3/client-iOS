@@ -11,6 +11,10 @@ final class MyMusicVCDataSource: NSObject, UICollectionViewDataSource {
     // 데이터 가변적으로 보여주기 위한 변수
     var dataCount = 5
     var countList = [0, 0, 1, 0]
+    var dataCount = 0
+    var countList = [0, 0, 0, 0]
+    var myPlayList = [MyPlayListData]()
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         2
     }
