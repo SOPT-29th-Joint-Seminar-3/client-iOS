@@ -12,12 +12,6 @@ struct GetMyMusicService {
     
     func requestGetMyMusic(id: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
         let url = APIConstants.getMyPlayListURL + id
-        //        let header: HTTPHeaders = ["Content-Type": "application/json"]
-        //        let body: Parameters = [
-        //            "email": email,
-        //            "password": password
-        //        ]
-        
         let request = AF.request(url, method: .get, encoding: JSONEncoding.default)
         
         request.responseData { dataResponse in

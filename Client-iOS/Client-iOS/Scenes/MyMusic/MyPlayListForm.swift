@@ -28,11 +28,3 @@ struct MyPlayListData: Codable {
     let title: String
     let description: String
 }
-
-//func dummyMyPlayListData() -> [MyPlayListForm] {
-//    var data = [MyPlayListForm]()
-//    for x in 1..<11 {
-//        data.append(MyPlayListForm(albumImage: UIImage(named: "cover_\(x)")!, albumTitle: "2021.11.09", albumCount: 5))
-//    }
-//    return data
-//}
