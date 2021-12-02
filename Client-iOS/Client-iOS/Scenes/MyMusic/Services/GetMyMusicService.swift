@@ -18,9 +18,9 @@ struct GetMyMusicService {
 //            "password": password
 //        ]
         
-        let request = AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
+        let request = AF.request(url, method: .get, encoding: JSONEncoding.default)
         
-        dataRequest.responseData { dataResponse in
+        request.responseData { dataResponse in
             switch dataResponse.result {
             case .success:
                 guard let statusCode = dataResponse.response?.statusCode else { return }
@@ -37,8 +37,8 @@ struct GetMyMusicService {
     private func judgeSignInStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isVaildSignInData(data: data)
-        case 400: return isVaildSignInData(data: data) // .pathErr
-        case 500: return isVaildSignInData(data: data) // .serverErr
+        case 400: return isVaildSignInData(data: data)
+        case 500: return isVaildSignInData(data: data)
         default: return .networkFail
         }
     }

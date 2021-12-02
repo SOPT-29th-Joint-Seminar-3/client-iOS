@@ -5,19 +5,34 @@
 //  Created by 1v1 on 2021/11/16.
 //
 
+import Foundation
 import UIKit
-// 여기에 데이터 형태랑 더미데이터 넣어 뒀는데... TableView 그리면서 데이터 갖다 쓰면 되고... 뷰컨에 올릴 때에는 dummyMyPlayListData()만 뷰컨 내부에 옮기시면 될 듯합니다...
 
-struct MyPlayListForm {
-    var albumImage: UIImage
-    var albumTitle: String
-    var albumCount: Int
+struct GetMyMusicResponseData: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+    let data: GetMyMusicResultData?
 }
 
-func dummyMyPlayListData() -> [MyPlayListForm] {
-    var data = [MyPlayListForm]()
-    for x in 1..<11 {
-        data.append(MyPlayListForm(albumImage: UIImage(named: "cover_\(x)")!, albumTitle: "2021.11.09", albumCount: 5))
-    }
-    return data
+struct GetMyMusicResultData: Codable {
+    let likeCount: Int
+    let saveCount: Int
+    let recentPlayedCount: Int
+    let mostPlayedCount: Int
+    let likes: [MyPlayListData]
 }
+
+struct MyPlayListData: Codable {
+    let id: Int
+    let title: String
+    let description: String
+}
+
+//func dummyMyPlayListData() -> [MyPlayListForm] {
+//    var data = [MyPlayListForm]()
+//    for x in 1..<11 {
+//        data.append(MyPlayListForm(albumImage: UIImage(named: "cover_\(x)")!, albumTitle: "2021.11.09", albumCount: 5))
+//    }
+//    return data
+//}
