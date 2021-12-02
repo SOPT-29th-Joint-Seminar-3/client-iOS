@@ -29,6 +29,7 @@
 		5CA13CFB27479A5D007FAFFF /* AlbumTrackListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */; };
 		5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */; };
 		5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */; };
+		5CF2D80527585B8000ED0F74 /* GetMyMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2D80427585B8000ED0F74 /* GetMyMusicService.swift */; };
 		BD01C867274637D2003619F9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C866274637D2003619F9 /* BaseVC.swift */; };
 		BD01C86927463CA1003619F9 /* PreparingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01C86827463CA1003619F9 /* PreparingVC.swift */; };
 		BD041987273EDAE700347610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD041986273EDAE700347610 /* AppDelegate.swift */; };
@@ -87,6 +88,7 @@
 		5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackListForm.swift; sourceTree = "<group>"; };
 		5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayListHeaderView.xib; sourceTree = "<group>"; };
 		5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayListHeaderView.swift; sourceTree = "<group>"; };
+		5CF2D80427585B8000ED0F74 /* GetMyMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMyMusicService.swift; sourceTree = "<group>"; };
 		5E9FF60D647B06C0E21B9D0B /* Pods-Client-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Client-iOS/Pods-Client-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD01C866274637D2003619F9 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		BD01C86827463CA1003619F9 /* PreparingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparingVC.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 				5C065D87275267480080F72E /* NetworkResult.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		5CF2D80327585B6600ED0F74 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2D80427585B8000ED0F74 /* GetMyMusicService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BBE43E5C5E0B2323A9DBADA6 /* Pods */ = {
@@ -262,6 +272,7 @@
 		BD10D124273F96D400B395B4 /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				5CF2D80327585B6600ED0F74 /* Services */,
 				BD10D125273F96F800B395B4 /* MyMusicVC.swift */,
 				BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */,
 				BD10D131273F97F800B395B4 /* Views */,
@@ -504,6 +515,7 @@
 				2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */,
 				5C065D88275267480080F72E /* NetworkResult.swift in Sources */,
 				2B45DB342742305300C90091 /* TestVC.swift in Sources */,
+				5CF2D80527585B8000ED0F74 /* GetMyMusicService.swift in Sources */,
 				5C9F0F51274379C200A73DF2 /* MyPlayListForm.swift in Sources */,
 				BD10D12A273F975A00B395B4 /* Color.swift in Sources */,
 				BD10D12C273F976700B395B4 /* Typography.swift in Sources */,
