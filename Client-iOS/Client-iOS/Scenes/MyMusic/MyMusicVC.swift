@@ -17,7 +17,7 @@ final class MyMusicVC: BaseVC {
     // MARK: - Properties
     
     private let dataSource = MyMusicVCDataSource()
-    let getMyMusicService = GetMyMusicService.shared
+    private let getMyMusicService = GetMyMusicService.shared
     
     // MARK: - Life cycles
     
@@ -70,19 +70,19 @@ final class MyMusicVC: BaseVC {
     // MARK: - Custom Method
     
     private func fetchMyMusicData() {
-        getMyMusicService.requestGetMyMusic(id: "1") { responseData in
+        getMyMusicService.requestGetMyMusic(id: "1") { [weak self] responseData in
             switch responseData {
             case .success(let myMusicResponse):
-                guard let response = myMusicResponse as? GetMyMusicResponseData else { return }
-                self.dataSource.countList = [
-                    response.data?.likeCount ?? 0,
-                    response.data?.saveCount ?? 0,
-                    response.data?.recentPlayedCount ?? 0,
-                    response.data?.mostPlayedCount ?? 0
+                guard let response = myMusicResponse as? GetMyMusicResultData else { return }
+                self?.dataSource.countList = [
+                    response.likeCount,
+                    response.saveCount,
+                    response.recentPlayedCount,
+                    response.mostPlayedCount
                 ]
-                self.dataSource.myPlayList = response.data?.likes ?? [MyPlayListData]()
-                self.dataSource.dataCount = (response.data?.likes.count ?? 0) / 2
-                self.collectionView.reloadData()
+                self?.dataSource.myPlayList = response.likes
+                self?.dataSource.dataCount = response.likes.count / 2
+                self?.collectionView.reloadData()
 
             default:
                 print("데이터 불러오기 실패")

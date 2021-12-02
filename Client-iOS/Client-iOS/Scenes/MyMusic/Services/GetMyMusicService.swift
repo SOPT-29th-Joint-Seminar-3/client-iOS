@@ -40,6 +40,6 @@ struct GetMyMusicService {
     private func isVaildMyMusicData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(GetMyMusicResponseData.self, from: data) else { return .pathErr }
-        return .success(decodedData)
+        return .success(decodedData.data ?? GetMyMusicResultData(likeCount: 0, saveCount: 0, recentPlayedCount: 0, mostPlayedCount: 0, likes: []))
     }
 }
