@@ -57,12 +57,12 @@ extension PlaylistDetailVC {
         let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(86)
+                heightDimension: .absolute(61)
             ),
             subitems: [item])
         
         group.contentInsets = NSDirectionalEdgeInsets(
-            top: 9, leading: 15, bottom: 9, trailing: 15
+            top: 14, leading: 20, bottom: 0, trailing: 20
         )
 
         let section = NSCollectionLayoutSection(group: group)
