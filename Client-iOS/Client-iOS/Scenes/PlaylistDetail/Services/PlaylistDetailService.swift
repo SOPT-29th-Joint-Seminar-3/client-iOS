@@ -35,7 +35,7 @@ struct PlaylistDetailService {
         }
     }
     
-    private func judgePlaylistDetailStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+    func judgePlaylistDetailStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return getPlaylistDetailData(data: data)
         case 400: return .pathErr
