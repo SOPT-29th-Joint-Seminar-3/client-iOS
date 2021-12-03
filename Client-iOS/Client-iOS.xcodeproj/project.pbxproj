@@ -46,7 +46,6 @@
 		BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D134273F986600B395B4 /* MainTabBarController.swift */; };
 		BD10D137273F987200B395B4 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D136273F987200B395B4 /* MainTabBar.swift */; };
 		BD10D13B273F999F00B395B4 /* MyMusicViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */; };
-		BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */; };
 		BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */; };
 		BD10D141273F99FB00B395B4 /* PlaylistDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */; };
 		BD1B0192274DD02500B4AB2A /* PlayStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */; };
@@ -115,7 +114,6 @@
 		BD10D134273F986600B395B4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BD10D136273F987200B395B4 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicViewSample.swift; sourceTree = "<group>"; };
-		BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewSample.swift; sourceTree = "<group>"; };
 		BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMusicVC.storyboard; sourceTree = "<group>"; };
 		BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistDetailVC.storyboard; sourceTree = "<group>"; };
 		BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayStatusView.xib; sourceTree = "<group>"; };
@@ -167,6 +165,7 @@
 			children = (
 				2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */,
 				BD5B52F9275A1E6F001F8F2A /* PlaylistBookmarkModel.swift */,
+				5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,7 +295,6 @@
 				BD10D125273F96F800B395B4 /* MyMusicVC.swift */,
 				BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */,
 				BD10D131273F97F800B395B4 /* Views */,
-				5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */,
 				BDCEF9BF27469C450039877A /* MyMusicVC+Layout.swift */,
 				BDCEF9C327469CAC0039877A /* MyMusicVC+DataSource.swift */,
 				BDCEF9C527469EE10039877A /* MyMusicSection.swift */,
@@ -312,7 +310,6 @@
 				BD10D12F273F979700B395B4 /* PlaylistDetailVC.swift */,
 				BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */,
 				BD10D132273F97FB00B395B4 /* Views */,
-				5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */,
 				BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */,
 				BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */,
 				BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */,
@@ -357,7 +354,6 @@
 		BD10D132273F97FB00B395B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BD10D13C273F99AC00B395B4 /* PlaylistViewSample.swift */,
 				2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */,
 				2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */,
 				5CA13CF62747343A007FAFFF /* AlbumTrackCVC.swift */,
@@ -381,6 +377,7 @@
 		BD51477B27591FD500C652D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -563,7 +560,6 @@
 				5CA13CF527469E2E007FAFFF /* AlbumTrackHeaderView.swift in Sources */,
 				BD01C867274637D2003619F9 /* BaseVC.swift in Sources */,
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,
-				BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */,
 				BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */,
 				5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */,
 				BD5B52FA275A1E6F001F8F2A /* PlaylistBookmarkModel.swift in Sources */,
@@ -721,6 +717,7 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "지니뮤직";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -751,6 +748,7 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Client-iOS/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "지니뮤직";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
