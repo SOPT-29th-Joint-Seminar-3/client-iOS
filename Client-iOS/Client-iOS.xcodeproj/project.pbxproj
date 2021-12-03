@@ -58,6 +58,8 @@
 		BD514778275912B800C652D8 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD514777275912B800C652D8 /* UIApplication+.swift */; };
 		BD51477A275919A300C652D8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD514779275919A300C652D8 /* UIView+.swift */; };
 		BD51477D2759211400C652D8 /* PlaylistService+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51477C2759211400C652D8 /* PlaylistService+Creation.swift */; };
+		BD5B52FA275A1E6F001F8F2A /* PlaylistBookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B52F9275A1E6F001F8F2A /* PlaylistBookmarkModel.swift */; };
+		BD5B52FC275A1F19001F8F2A /* PlaylistService+Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B52FB275A1F19001F8F2A /* PlaylistService+Bookmark.swift */; };
 		BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */; };
 		BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */; };
 		BDC831C9274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */; };
@@ -125,6 +127,8 @@
 		BD514777275912B800C652D8 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		BD514779275919A300C652D8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BD51477C2759211400C652D8 /* PlaylistService+Creation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistService+Creation.swift"; sourceTree = "<group>"; };
+		BD5B52F9275A1E6F001F8F2A /* PlaylistBookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistBookmarkModel.swift; sourceTree = "<group>"; };
+		BD5B52FB275A1F19001F8F2A /* PlaylistService+Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistService+Bookmark.swift"; sourceTree = "<group>"; };
 		BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+DataSource.swift"; sourceTree = "<group>"; };
 		BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailSection.swift; sourceTree = "<group>"; };
 		BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistDetailVC+Layout.swift"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */,
+				BD5B52F9275A1E6F001F8F2A /* PlaylistBookmarkModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */,
+				BD5B52FB275A1F19001F8F2A /* PlaylistService+Bookmark.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5B52FC275A1F19001F8F2A /* PlaylistService+Bookmark.swift in Sources */,
 				BD10D12E273F977200B395B4 /* Image.swift in Sources */,
 				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
 				BD514778275912B800C652D8 /* UIApplication+.swift in Sources */,
@@ -559,6 +566,7 @@
 				BD10D13D273F99AC00B395B4 /* PlaylistViewSample.swift in Sources */,
 				BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */,
 				5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */,
+				BD5B52FA275A1E6F001F8F2A /* PlaylistBookmarkModel.swift in Sources */,
 				BD10D13B273F999F00B395B4 /* MyMusicViewSample.swift in Sources */,
 				5C6D876A274101DB0033A2A4 /* MyPlayListCVC.swift in Sources */,
 			);
