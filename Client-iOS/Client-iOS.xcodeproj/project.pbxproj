@@ -199,6 +199,36 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2B7CE6D2275A526B00AC9030 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */,
+				2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */,
+				2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */,
+				5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */,
+				BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */,
+				BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */,
+				BD51477327590A3D00C652D8 /* PlaylistPopUpView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		2B7CE6D3275A527200AC9030 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */,
+				BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */,
+				2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */,
+				2B45DB332742305300C90091 /* TestVC.swift */,
+				2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */,
+				5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */,
+				BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */,
+				BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */,
+				BD51477527590A4E00C652D8 /* PlaylistPopUpView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5C065D84275266B60080F72E /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,22 +381,8 @@
 		BD10D131273F97F800B395B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5CA5FA1C27438D2900452724 /* MyPlayListHeaderView.swift */,
-				5CA5FA1B27438D2900452724 /* MyPlayListHeaderView.xib */,
-				BD10D13A273F999F00B395B4 /* MyMusicViewSample.swift */,
-				2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */,
-				2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */,
-				2B45DB332742305300C90091 /* TestVC.swift */,
-				2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */,
-				2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */,
-				5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */,
-				5C6D8769274101DB0033A2A4 /* MyPlayListCVC.swift */,
-				BD1B0193274DD03000B4AB2A /* PlayStatusView.swift */,
-				BD1B0191274DD02500B4AB2A /* PlayStatusView.xib */,
-				BD3B8F2C2750BE6D00CA49B5 /* MyPlayListFooterView.swift */,
-				BD3B8F2A2750BE6000CA49B5 /* MyPlayListFooterView.xib */,
-				BD51477327590A3D00C652D8 /* PlaylistPopUpView.xib */,
-				BD51477527590A4E00C652D8 /* PlaylistPopUpView.swift */,
+				2B7CE6D3275A527200AC9030 /* Cells */,
+				2B7CE6D2275A526B00AC9030 /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
