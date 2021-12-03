@@ -290,14 +290,14 @@
 		BD10D124273F96D400B395B4 /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
-				BD51477B27591FD500C652D8 /* Models */,
-				5CF2D80327585B6600ED0F74 /* Services */,
 				BD10D125273F96F800B395B4 /* MyMusicVC.swift */,
 				BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */,
-				BD10D131273F97F800B395B4 /* Views */,
 				BDCEF9BF27469C450039877A /* MyMusicVC+Layout.swift */,
 				BDCEF9C327469CAC0039877A /* MyMusicVC+DataSource.swift */,
 				BDCEF9C527469EE10039877A /* MyMusicSection.swift */,
+				BD10D131273F97F800B395B4 /* Views */,
+				5CF2D80327585B6600ED0F74 /* Services */,
+				BD51477B27591FD500C652D8 /* Models */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -305,14 +305,14 @@
 		BD10D127273F972100B395B4 /* PlaylistDetail */ = {
 			isa = PBXGroup;
 			children = (
-				2B5AD15A27554C1500A5D9B2 /* Services */,
-				2B5AD15727554A2F00A5D9B2 /* Models */,
 				BD10D12F273F979700B395B4 /* PlaylistDetailVC.swift */,
 				BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */,
-				BD10D132273F97FB00B395B4 /* Views */,
 				BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */,
 				BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */,
 				BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */,
+				BD10D132273F97FB00B395B4 /* Views */,
+				2B5AD15A27554C1500A5D9B2 /* Services */,
+				2B5AD15727554A2F00A5D9B2 /* Models */,
 			);
 			path = PlaylistDetail;
 			sourceTree = "<group>";
