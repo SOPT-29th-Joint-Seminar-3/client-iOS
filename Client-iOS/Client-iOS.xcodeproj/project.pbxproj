@@ -165,6 +165,7 @@
 			children = (
 				2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */,
 				BD5B52F9275A1E6F001F8F2A /* PlaylistBookmarkModel.swift */,
+				5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,7 +295,6 @@
 				BD10D125273F96F800B395B4 /* MyMusicVC.swift */,
 				BD10D13E273F99EE00B395B4 /* MyMusicVC.storyboard */,
 				BD10D131273F97F800B395B4 /* Views */,
-				5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */,
 				BDCEF9BF27469C450039877A /* MyMusicVC+Layout.swift */,
 				BDCEF9C327469CAC0039877A /* MyMusicVC+DataSource.swift */,
 				BDCEF9C527469EE10039877A /* MyMusicSection.swift */,
@@ -310,7 +310,6 @@
 				BD10D12F273F979700B395B4 /* PlaylistDetailVC.swift */,
 				BD10D140273F99FB00B395B4 /* PlaylistDetailVC.storyboard */,
 				BD10D132273F97FB00B395B4 /* Views */,
-				5CA13CFA27479A5D007FAFFF /* AlbumTrackListForm.swift */,
 				BDC831C8274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift */,
 				BDC831C4274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift */,
 				BDC831C6274E16A200D0FE78 /* PlaylistDetailSection.swift */,
@@ -378,6 +377,7 @@
 		BD51477B27591FD500C652D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5C9F0F50274379C200A73DF2 /* MyPlayListForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
