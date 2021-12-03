@@ -27,6 +27,7 @@ class AlbumCoverCVC: UICollectionViewCell {
                 bookmarkButton.setImage(
                     UIImage(named: "icn_star_fill"), for: .normal
                 )
+                bookmarkPlaylist()
             } else {
                 bookmarkButton.setImage(
                     UIImage(named: "icn_star"), for: .normal
@@ -59,5 +60,25 @@ class AlbumCoverCVC: UICollectionViewCell {
     
     @IBAction func touchUpBookmarkButton(_ sender: Any) {
         isSelectedBookmarkBtn.toggle()
+    }
+    
+    private func bookmarkPlaylist() {
+        PlaylistDetailService.shared.bookmarkPlaylist(userId: 1, playlistId: "2") { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? PlaylistBookmarkModel else { return }
+                print(data)
+                self.showAlert()
+            default:
+                print("데이터 불러오기 실패")
+            }
+        }
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "즐겨찾기 성공!", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alert.addAction(okAction)
+        UIApplication.topViewController()?.present(alert, animated: true, completion: nil)
     }
 }
