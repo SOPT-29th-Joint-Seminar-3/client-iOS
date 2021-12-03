@@ -19,8 +19,7 @@ class MyPlayListCVC: UICollectionViewCell {
     @IBOutlet weak var albumCountLabel: UILabel!
     
     func setData(data: MyPlayListData) {
-        albumImageView.image = self.tag < 10 ?
-        UIImage(named: "cover_\(self.tag + 1)")! : UIImage(named: "cover_\(self.tag - 10 + 1)")!
+        albumImageView.image = UIImage(named: "cover_\((self.tag % 10) + 1)")!
         albumTitleLabel.text = data.title
         albumCountLabel.text = data.description
     }
