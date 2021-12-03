@@ -18,6 +18,22 @@ class AlbumCoverCVC: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var arrowButton: UIButton!
+    @IBOutlet weak var bookmarkButton: UIButton!
+    
+    // 일시적인 토글 처리
+    private var isSelectedBookmarkBtn: Bool = false {
+        didSet {
+            if isSelectedBookmarkBtn {
+                bookmarkButton.setImage(
+                    UIImage(named: "icn_star_fill"), for: .normal
+                )
+            } else {
+                bookmarkButton.setImage(
+                    UIImage(named: "icn_star"), for: .normal
+                )
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,5 +55,9 @@ class AlbumCoverCVC: UICollectionViewCell {
     @IBAction func touchUpBackButton(_ sender: Any) {
         /// pop
         NotificationCenter.default.post(name: NSNotification.Name("pop"), object: nil)
+    }
+    
+    @IBAction func touchUpBookmarkButton(_ sender: Any) {
+        isSelectedBookmarkBtn.toggle()
     }
 }

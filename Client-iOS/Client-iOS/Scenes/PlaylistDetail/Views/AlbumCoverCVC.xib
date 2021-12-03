@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,6 +93,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="icn_star"/>
+                                <connections>
+                                    <action selector="touchUpBookmarkButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4yM-QB-Alt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH1-Xd-mUr" userLabel="musicButton">
                                 <rect key="frame" x="60" y="336" width="26" height="26"/>
@@ -206,6 +209,7 @@
             <size key="customSize" width="229" height="202"/>
             <connections>
                 <outlet property="arrowButton" destination="Aej-p8-ibE" id="2rL-gX-28f"/>
+                <outlet property="bookmarkButton" destination="3St-l9-xy5" id="h5U-sg-2VO"/>
                 <outlet property="centerImageView" destination="Lez-zf-hAt" id="Ixr-jr-Bww"/>
                 <outlet property="descriptionLabel" destination="1CB-Rr-iqL" id="0Vd-Xf-6CF"/>
                 <outlet property="leftSecondImageView" destination="u2t-bf-KaR" id="rOW-iC-8PD"/>
