@@ -179,6 +179,26 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		2B7CE6D0275A519F00AC9030 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */,
+				5CA13CF72747343A007FAFFF /* AlbumTrackCVC.xib */,
+				5CA13CF227469DB0007FAFFF /* AlbumTrackHeaderView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		2B7CE6D1275A51A900AC9030 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */,
+				5CA13CF62747343A007FAFFF /* AlbumTrackCVC.swift */,
+				5CA13CF427469E2E007FAFFF /* AlbumTrackHeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5C065D84275266B60080F72E /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,12 +374,8 @@
 		BD10D132273F97FB00B395B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */,
-				2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */,
-				5CA13CF62747343A007FAFFF /* AlbumTrackCVC.swift */,
-				5CA13CF72747343A007FAFFF /* AlbumTrackCVC.xib */,
-				5CA13CF227469DB0007FAFFF /* AlbumTrackHeaderView.xib */,
-				5CA13CF427469E2E007FAFFF /* AlbumTrackHeaderView.swift */,
+				2B7CE6D1275A51A900AC9030 /* Cells */,
+				2B7CE6D0275A519F00AC9030 /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
