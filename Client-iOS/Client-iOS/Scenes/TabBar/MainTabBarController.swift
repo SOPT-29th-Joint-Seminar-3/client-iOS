@@ -23,10 +23,12 @@ class MainTabBarController: UITabBarController {
     private func setTabBar() {
         guard let myMusicVC = UIStoryboard(name: "MyMusicVC", bundle: nil)
                 .instantiateViewController(withIdentifier: "MyMusicVC") as? MyMusicVC else { return }
+        guard let forYouVC = UIStoryboard(name: "ForYouVC", bundle: nil)
+                .instantiateViewController(withIdentifier: "ForYouVC") as? ForYouVC else { return }
                 
         let viewControllers = [
             PreparingVC(),
-            PreparingVC(),
+            UINavigationController(rootViewController: forYouVC),
             PreparingVC(),
             UINavigationController(rootViewController: myMusicVC),
             PreparingVC(),
