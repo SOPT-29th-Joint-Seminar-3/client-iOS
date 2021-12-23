@@ -15,6 +15,8 @@
 		2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */; };
 		2B5AD15927554AD800A5D9B2 /* PlaylistDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */; };
 		2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */; };
+		2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FA2774469700CE5138 /* ForYouVC.swift */; };
+		2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
 		5C065D86275266E90080F72E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D85275266E90080F72E /* APIConstants.swift */; };
 		5C065D88275267480080F72E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C065D87275267480080F72E /* NetworkResult.swift */; };
@@ -78,6 +80,8 @@
 		2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCVC.xib; sourceTree = "<group>"; };
 		2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailModel.swift; sourceTree = "<group>"; };
 		2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailService.swift; sourceTree = "<group>"; };
+		2BC5E7FA2774469700CE5138 /* ForYouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouVC.swift; sourceTree = "<group>"; };
+		2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForYouVC.storyboard; sourceTree = "<group>"; };
 		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5C065D87275267480080F72E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		5C6D8767274101440033A2A4 /* MyPlayListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlayListCVC.xib; sourceTree = "<group>"; };
@@ -220,6 +224,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2BC5E7F92774465B00CE5138 /* FoyYou */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5E7FA2774469700CE5138 /* ForYouVC.swift */,
+				2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */,
+			);
+			path = FoyYou;
+			sourceTree = "<group>";
+		};
 		5C065D84275266B60080F72E /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +337,7 @@
 				BD10D133273F981600B395B4 /* TabBar */,
 				BD10D124273F96D400B395B4 /* MyMusic */,
 				BD10D127273F972100B395B4 /* PlaylistDetail */,
+				2BC5E7F92774465B00CE5138 /* FoyYou */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -475,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */,
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
 				2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */,
 				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
@@ -552,6 +567,7 @@
 				BD514778275912B800C652D8 /* UIApplication+.swift in Sources */,
 				BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */,
 				BD51477A275919A300C652D8 /* UIView+.swift in Sources */,
+				2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
 				2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */,
 				2B5AD15927554AD800A5D9B2 /* PlaylistDetailModel.swift in Sources */,
