@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ForYouVC-->
         <scene sceneID="s0d-6b-0kx">
@@ -16,16 +21,65 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAY-2T-faO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95x-9Z-Q6Z">
+                                        <rect key="frame" x="19" y="12.5" width="62" height="25"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-mN-fey">
+                                        <rect key="frame" x="366" y="11" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="Qd7-Fr-VjI"/>
+                                            <constraint firstAttribute="height" constant="28" id="sy1-zU-XwJ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="icn_profile"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpP-42-EDL">
+                                        <rect key="frame" x="315" y="15" width="36" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="Ic0-sm-1oI"/>
+                                            <constraint firstAttribute="height" constant="20" id="oiU-BB-8jZ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="icn_voucher"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="95x-9Z-Q6Z" firstAttribute="leading" secondItem="jAY-2T-faO" secondAttribute="leading" constant="19" id="0gf-HK-lO8"/>
+                                    <constraint firstItem="95x-9Z-Q6Z" firstAttribute="centerY" secondItem="jAY-2T-faO" secondAttribute="centerY" id="MSU-Ro-EpY"/>
+                                    <constraint firstItem="e3D-mN-fey" firstAttribute="leading" secondItem="hpP-42-EDL" secondAttribute="trailing" constant="15" id="ewE-Xj-bW4"/>
+                                    <constraint firstAttribute="height" constant="50" id="gpY-Qu-ZH5"/>
+                                    <constraint firstItem="hpP-42-EDL" firstAttribute="centerY" secondItem="e3D-mN-fey" secondAttribute="centerY" id="jeB-Bh-NJz"/>
+                                    <constraint firstAttribute="trailing" secondItem="e3D-mN-fey" secondAttribute="trailing" constant="20" id="qEh-bI-8m5"/>
+                                    <constraint firstItem="e3D-mN-fey" firstAttribute="centerY" secondItem="jAY-2T-faO" secondAttribute="centerY" id="sqg-qy-zEz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jAY-2T-faO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8g2-6S-G95"/>
+                            <constraint firstItem="jAY-2T-faO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QFU-er-ZgA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jAY-2T-faO" secondAttribute="trailing" id="m4A-3b-m31"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="113"/>
+            <point key="canvasLocation" x="-1" y="66"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icn_profile" width="36" height="36"/>
+        <image name="icn_voucher" width="36" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

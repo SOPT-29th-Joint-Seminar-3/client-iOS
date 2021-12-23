@@ -227,10 +227,34 @@
 		2BC5E7F92774465B00CE5138 /* FoyYou */ = {
 			isa = PBXGroup;
 			children = (
+				2BC5E7FE277448D500CE5138 /* Views */,
 				2BC5E7FA2774469700CE5138 /* ForYouVC.swift */,
 				2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */,
+				2BC5E800277448E400CE5138 /* Cells */,
+				2BC5E7FF277448DD00CE5138 /* Xibs */,
 			);
 			path = FoyYou;
+			sourceTree = "<group>";
+		};
+		2BC5E7FE277448D500CE5138 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BC5E7FF277448DD00CE5138 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		2BC5E800277448E400CE5138 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5C065D84275266B60080F72E /* Network */ = {
