@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForYouVC: UIViewController {
+class ForYouVC: BaseVC {
     
     // MARK: - IBOutlets
     
