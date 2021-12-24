@@ -11,6 +11,8 @@ class ForYouVC: BaseVC {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     // MARK: - Properties
     
 
@@ -18,11 +20,16 @@ class ForYouVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setStyle()
+        setCollectionView()
     }
     
     // MARK: - Setup
     
     private func setStyle() {
         navigationController?.navigationBar.isHidden = true
+    }
+    
+    private func setCollectionView() {
+        collectionView.backgroundColor = .yellow
     }
 }
