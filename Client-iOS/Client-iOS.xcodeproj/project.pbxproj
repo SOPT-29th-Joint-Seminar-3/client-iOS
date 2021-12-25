@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B009FDF2743F51C009A5BBE /* AlbumCoverCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */; };
 		2B009FE02743F51C009A5BBE /* AlbumCoverCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */; };
+		2B01892027758F2B00DB2D26 /* ForYouVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01891F27758F2B00DB2D26 /* ForYouVC+Layout.swift */; };
+		2B01892227758F6000DB2D26 /* ForYouSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01892127758F6000DB2D26 /* ForYouSection.swift */; };
 		2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */; };
 		2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */; };
 		2B45DB3127422A9C00C90091 /* QuickMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */; };
@@ -74,6 +76,8 @@
 		2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Client_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B009FDD2743F51C009A5BBE /* AlbumCoverCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCoverCVC.swift; sourceTree = "<group>"; };
 		2B009FDE2743F51C009A5BBE /* AlbumCoverCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCoverCVC.xib; sourceTree = "<group>"; };
+		2B01891F27758F2B00DB2D26 /* ForYouVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForYouVC+Layout.swift"; sourceTree = "<group>"; };
+		2B01892127758F6000DB2D26 /* ForYouSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouSection.swift; sourceTree = "<group>"; };
 		2B37BA572742CFD8005BE803 /* QuickMenuCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCV.swift; sourceTree = "<group>"; };
 		2B37BA582742CFD8005BE803 /* QuickMenuCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCV.xib; sourceTree = "<group>"; };
 		2B45DB2F27422A9C00C90091 /* QuickMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMenuCVC.swift; sourceTree = "<group>"; };
@@ -230,8 +234,8 @@
 				2BC5E7FE277448D500CE5138 /* Views */,
 				2BC5E7FA2774469700CE5138 /* ForYouVC.swift */,
 				2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */,
-				2BC5E800277448E400CE5138 /* Cells */,
-				2BC5E7FF277448DD00CE5138 /* Xibs */,
+				2B01891F27758F2B00DB2D26 /* ForYouVC+Layout.swift */,
+				2B01892127758F6000DB2D26 /* ForYouSection.swift */,
 			);
 			path = FoyYou;
 			sourceTree = "<group>";
@@ -239,6 +243,8 @@
 		2BC5E7FE277448D500CE5138 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2BC5E800277448E400CE5138 /* Cells */,
+				2BC5E7FF277448DD00CE5138 /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -587,10 +593,12 @@
 			files = (
 				BD5B52FC275A1F19001F8F2A /* PlaylistService+Bookmark.swift in Sources */,
 				BD10D12E273F977200B395B4 /* Image.swift in Sources */,
+				2B01892027758F2B00DB2D26 /* ForYouVC+Layout.swift in Sources */,
 				2B37BA592742CFD8005BE803 /* QuickMenuCV.swift in Sources */,
 				BD514778275912B800C652D8 /* UIApplication+.swift in Sources */,
 				BDC831C7274E16A200D0FE78 /* PlaylistDetailSection.swift in Sources */,
 				BD51477A275919A300C652D8 /* UIView+.swift in Sources */,
+				2B01892227758F6000DB2D26 /* ForYouSection.swift in Sources */,
 				2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */,
 				BD041987273EDAE700347610 /* AppDelegate.swift in Sources */,
 				2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */,

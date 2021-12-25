@@ -32,4 +32,8 @@ class ForYouVC: BaseVC {
     private func setCollectionView() {
         collectionView.backgroundColor = .yellow
     }
+    
+    private func registerNibs() {
+        
+    }
 }
