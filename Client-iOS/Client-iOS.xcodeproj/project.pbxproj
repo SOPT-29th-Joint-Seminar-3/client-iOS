@@ -21,6 +21,8 @@
 		2BC19D402778279D00407707 /* MyMusicColorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */; };
 		2BC19D43277833C800407707 /* TimeMachineCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC19D41277833C800407707 /* TimeMachineCVC.swift */; };
 		2BC19D44277833C800407707 /* TimeMachineCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D42277833C800407707 /* TimeMachineCVC.xib */; };
+		2BC19D47277837CB00407707 /* NowCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC19D45277837CB00407707 /* NowCVC.swift */; };
+		2BC19D48277837CB00407707 /* NowCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D46277837CB00407707 /* NowCVC.xib */; };
 		2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FA2774469700CE5138 /* ForYouVC.swift */; };
 		2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
@@ -92,6 +94,8 @@
 		2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMusicColorCVC.xib; sourceTree = "<group>"; };
 		2BC19D41277833C800407707 /* TimeMachineCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMachineCVC.swift; sourceTree = "<group>"; };
 		2BC19D42277833C800407707 /* TimeMachineCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeMachineCVC.xib; sourceTree = "<group>"; };
+		2BC19D45277837CB00407707 /* NowCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowCVC.swift; sourceTree = "<group>"; };
+		2BC19D46277837CB00407707 /* NowCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowCVC.xib; sourceTree = "<group>"; };
 		2BC5E7FA2774469700CE5138 /* ForYouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouVC.swift; sourceTree = "<group>"; };
 		2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForYouVC.storyboard; sourceTree = "<group>"; };
 		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			children = (
 				2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */,
 				2BC19D42277833C800407707 /* TimeMachineCVC.xib */,
+				2BC19D46277837CB00407707 /* NowCVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			children = (
 				2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */,
 				2BC19D41277833C800407707 /* TimeMachineCVC.swift */,
+				2BC19D45277837CB00407707 /* NowCVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				BD10D13F273F99EE00B395B4 /* MyMusicVC.storyboard in Resources */,
 				5CA5FA1D27438D2900452724 /* MyPlayListHeaderView.xib in Resources */,
 				BD1B0192274DD02500B4AB2A /* PlayStatusView.xib in Resources */,
+				2BC19D48277837CB00407707 /* NowCVC.xib in Resources */,
 				2B009FE02743F51C009A5BBE /* AlbumCoverCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +653,7 @@
 				BD10D130273F979700B395B4 /* PlaylistDetailVC.swift in Sources */,
 				BDC831C5274E163B00D0FE78 /* PlaylistDetailVC+DataSource.swift in Sources */,
 				5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */,
+				2BC19D47277837CB00407707 /* NowCVC.swift in Sources */,
 				BD5B52FA275A1E6F001F8F2A /* PlaylistBookmarkModel.swift in Sources */,
 				5C6D876A274101DB0033A2A4 /* MyPlayListCVC.swift in Sources */,
 				2BC19D3F2778279D00407707 /* MyMusicColorCVC.swift in Sources */,
