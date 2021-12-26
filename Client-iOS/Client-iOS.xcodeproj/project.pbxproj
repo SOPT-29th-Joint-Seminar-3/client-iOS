@@ -17,6 +17,8 @@
 		2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */; };
 		2B5AD15927554AD800A5D9B2 /* PlaylistDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */; };
 		2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */; };
+		2BC19D3F2778279D00407707 /* MyMusicColorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */; };
+		2BC19D402778279D00407707 /* MyMusicColorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */; };
 		2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FA2774469700CE5138 /* ForYouVC.swift */; };
 		2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
@@ -84,6 +86,8 @@
 		2B45DB3027422A9C00C90091 /* QuickMenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickMenuCVC.xib; sourceTree = "<group>"; };
 		2B5AD15827554AD800A5D9B2 /* PlaylistDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailModel.swift; sourceTree = "<group>"; };
 		2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailService.swift; sourceTree = "<group>"; };
+		2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicColorCVC.swift; sourceTree = "<group>"; };
+		2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMusicColorCVC.xib; sourceTree = "<group>"; };
 		2BC5E7FA2774469700CE5138 /* ForYouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouVC.swift; sourceTree = "<group>"; };
 		2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForYouVC.storyboard; sourceTree = "<group>"; };
 		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 		2BC5E7FF277448DD00CE5138 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 		2BC5E800277448E400CE5138 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -521,6 +527,7 @@
 			files = (
 				2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */,
 				BD041993273EDAE800347610 /* LaunchScreen.storyboard in Resources */,
+				2BC19D402778279D00407707 /* MyMusicColorCVC.xib in Resources */,
 				2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */,
 				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
 				BDF821A027401D1800394812 /* NotoSansKR-Regular.otf in Resources */,
@@ -633,6 +640,7 @@
 				5CA5FA1E27438D2900452724 /* MyPlayListHeaderView.swift in Sources */,
 				BD5B52FA275A1E6F001F8F2A /* PlaylistBookmarkModel.swift in Sources */,
 				5C6D876A274101DB0033A2A4 /* MyPlayListCVC.swift in Sources */,
+				2BC19D3F2778279D00407707 /* MyMusicColorCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
