@@ -19,6 +19,8 @@
 		2B5AD15C27554C2D00A5D9B2 /* PlaylistDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */; };
 		2BC19D3F2778279D00407707 /* MyMusicColorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */; };
 		2BC19D402778279D00407707 /* MyMusicColorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */; };
+		2BC19D43277833C800407707 /* TimeMachineCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC19D41277833C800407707 /* TimeMachineCVC.swift */; };
+		2BC19D44277833C800407707 /* TimeMachineCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC19D42277833C800407707 /* TimeMachineCVC.xib */; };
 		2BC5E7FB2774469700CE5138 /* ForYouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FA2774469700CE5138 /* ForYouVC.swift */; };
 		2BC5E7FD277446C500CE5138 /* ForYouVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */; };
 		50A64BF43F4A333A6EA414D0 /* Pods_Client_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2769AEA76DBF73190E4059DA /* Pods_Client_iOS.framework */; };
@@ -88,6 +90,8 @@
 		2B5AD15B27554C2D00A5D9B2 /* PlaylistDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailService.swift; sourceTree = "<group>"; };
 		2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicColorCVC.swift; sourceTree = "<group>"; };
 		2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMusicColorCVC.xib; sourceTree = "<group>"; };
+		2BC19D41277833C800407707 /* TimeMachineCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMachineCVC.swift; sourceTree = "<group>"; };
+		2BC19D42277833C800407707 /* TimeMachineCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeMachineCVC.xib; sourceTree = "<group>"; };
 		2BC5E7FA2774469700CE5138 /* ForYouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouVC.swift; sourceTree = "<group>"; };
 		2BC5E7FC277446C500CE5138 /* ForYouVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForYouVC.storyboard; sourceTree = "<group>"; };
 		5C065D85275266E90080F72E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC19D3E2778279D00407707 /* MyMusicColorCVC.xib */,
+				2BC19D42277833C800407707 /* TimeMachineCVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC19D3D2778279D00407707 /* MyMusicColorCVC.swift */,
+				2BC19D41277833C800407707 /* TimeMachineCVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -530,6 +536,7 @@
 				2BC19D402778279D00407707 /* MyMusicColorCVC.xib in Resources */,
 				2B45DB3227422A9C00C90091 /* QuickMenuCVC.xib in Resources */,
 				2B37BA5A2742CFD8005BE803 /* QuickMenuCV.xib in Resources */,
+				2BC19D44277833C800407707 /* TimeMachineCVC.xib in Resources */,
 				BDF821A027401D1800394812 /* NotoSansKR-Regular.otf in Resources */,
 				5CA13CF327469DB0007FAFFF /* AlbumTrackHeaderView.xib in Resources */,
 				BDF8219E27401D1800394812 /* NotoSansKR-Bold.otf in Resources */,
@@ -617,6 +624,7 @@
 				BD10D135273F986600B395B4 /* MainTabBarController.swift in Sources */,
 				BD041989273EDAE700347610 /* SceneDelegate.swift in Sources */,
 				BDC831C9274E180E00D0FE78 /* PlaylistDetailVC+Layout.swift in Sources */,
+				2BC19D43277833C800407707 /* TimeMachineCVC.swift in Sources */,
 				BDCEF9C427469CAC0039877A /* MyMusicVC+DataSource.swift in Sources */,
 				BD51477D2759211400C652D8 /* PlaylistService+Creation.swift in Sources */,
 				BD04199D273EDBA000347610 /* Extension+.swift in Sources */,
